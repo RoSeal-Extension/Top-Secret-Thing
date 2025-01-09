@@ -194,6 +194,8 @@ export default async function run({
 												latLong,
 											};
 										}
+
+										return;
 									}
 								}
 
