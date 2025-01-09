@@ -220,7 +220,11 @@ export async function listPublicServers(
 		filterObject(search) as Record<string, string>,
 	).toString();
 
+	let requestCount = 0;
 	while (true) {
+		if (requestCount >= 20) {
+			await Bun.sleep(requestCount * 1000);
+		}
 		try {
 			const res = await fetch(url.toString(), {
 				headers: {
@@ -232,6 +236,7 @@ export async function listPublicServers(
 			if (res.ok) {
 				return res.json();
 			}
+			requestCount++;
 		} catch {}
 	}
 }
