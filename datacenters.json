@@ -1,0 +1,2792 @@
+[
+    {
+        "dataCenterId": 370,
+        "location": {
+            "city": "Los Angeles",
+            "region": "California",
+            "country": "US",
+            "latLong": [
+                "34.0522",
+                "-118.2437"
+            ]
+        },
+        "ips": [
+            "128.116.1.33"
+        ]
+    },
+    {
+        "dataCenterId": 387,
+        "location": {
+            "city": "Secaucus",
+            "region": "New Jersey",
+            "country": "US",
+            "latLong": [
+                "40.7895",
+                "-74.0565"
+            ]
+        },
+        "ips": [
+            "128.116.32.33"
+        ]
+    },
+    {
+        "dataCenterId": 335,
+        "location": {
+            "city": "Chicago",
+            "region": "Illinois",
+            "country": "US",
+            "latLong": [
+                "41.8500",
+                "-87.6500"
+            ]
+        },
+        "ips": [
+            "128.116.48.33"
+        ]
+    },
+    {
+        "dataCenterId": 432,
+        "location": {
+            "city": "Miami",
+            "region": "Florida",
+            "country": "US",
+            "latLong": [
+                "25.7743",
+                "-80.1937"
+            ]
+        },
+        "ips": [
+            "128.116.127.33"
+        ]
+    },
+    {
+        "dataCenterId": 372,
+        "location": {
+            "city": "Singapore",
+            "region": "Singapore",
+            "country": "SG",
+            "latLong": [
+                "1.2897",
+                "103.8501"
+            ]
+        },
+        "ips": [
+            "128.116.50.33"
+        ]
+    },
+    {
+        "dataCenterId": 442,
+        "location": {
+            "city": "Reston",
+            "region": "Virginia",
+            "country": "US",
+            "latLong": [
+                "38.9687",
+                "-77.3411"
+            ]
+        },
+        "ips": [
+            "128.116.56.33"
+        ]
+    },
+    {
+        "dataCenterId": 299,
+        "location": {
+            "city": "Ashburn",
+            "region": "Virginia",
+            "country": "US",
+            "latLong": [
+                "39.0437",
+                "-77.4875"
+            ]
+        },
+        "ips": [
+            "128.116.53.33"
+        ]
+    },
+    {
+        "dataCenterId": 375,
+        "location": {
+            "city": "Dallas",
+            "region": "Texas",
+            "country": "US",
+            "latLong": [
+                "32.7831",
+                "-96.8067"
+            ]
+        },
+        "ips": [
+            "128.116.95.33"
+        ]
+    },
+    {
+        "dataCenterId": 374,
+        "location": {
+            "city": "Miami",
+            "region": "Florida",
+            "country": "US",
+            "latLong": [
+                "25.7743",
+                "-80.1937"
+            ]
+        },
+        "ips": [
+            "128.116.45.33"
+        ]
+    },
+    {
+        "dataCenterId": 302,
+        "location": {
+            "city": "Al-'Ubūr",
+            "region": "Qalyubia",
+            "country": "EG",
+            "latLong": [
+                "30.2289",
+                "31.4815"
+            ]
+        },
+        "ips": [
+            "128.116.33.33"
+        ]
+    },
+    {
+        "dataCenterId": 431,
+        "location": {
+            "city": "Seattle",
+            "region": "Washington",
+            "country": "US",
+            "latLong": [
+                "47.6062",
+                "-122.3321"
+            ]
+        },
+        "ips": [
+            "128.116.115.33"
+        ]
+    },
+    {
+        "dataCenterId": 413,
+        "location": {
+            "city": "Los Angeles",
+            "region": "California",
+            "country": "US",
+            "latLong": [
+                "34.0522",
+                "-118.2437"
+            ]
+        },
+        "ips": [
+            "128.116.63.33"
+        ]
+    },
+    {
+        "dataCenterId": 369,
+        "location": {
+            "city": "Sydney",
+            "region": "New South Wales",
+            "country": "AU",
+            "latLong": [
+                "-33.8678",
+                "151.2073"
+            ]
+        },
+        "ips": [
+            "128.116.51.33"
+        ]
+    },
+    {
+        "dataCenterId": 378,
+        "location": {
+            "city": "Frankfurt am Main",
+            "region": "Hesse",
+            "country": "DE",
+            "latLong": [
+                "50.1155",
+                "8.6842"
+            ]
+        },
+        "ips": [
+            "128.116.44.33"
+        ]
+    },
+    {
+        "dataCenterId": 388,
+        "location": {
+            "city": "Amsterdam",
+            "region": "North Holland",
+            "country": "NL",
+            "latLong": [
+                "52.3740",
+                "4.8897"
+            ]
+        },
+        "ips": [
+            "128.116.21.33"
+        ]
+    },
+    {
+        "dataCenterId": 353,
+        "location": {
+            "city": "Frankfurt am Main",
+            "region": "Hesse",
+            "country": "DE",
+            "latLong": [
+                "50.1155",
+                "8.6842"
+            ]
+        },
+        "ips": [
+            "128.116.5.33"
+        ]
+    },
+    {
+        "dataCenterId": 295,
+        "location": {
+            "city": "Singapore",
+            "region": "Singapore",
+            "country": "SG",
+            "latLong": [
+                "1.2897",
+                "103.8501"
+            ]
+        },
+        "ips": [
+            "128.116.97.33"
+        ]
+    },
+    {
+        "dataCenterId": 437,
+        "location": {
+            "city": "Paris",
+            "region": "Île-de-France",
+            "country": "FR",
+            "latLong": [
+                "48.8534",
+                "2.3488"
+            ]
+        },
+        "ips": [
+            "128.116.13.33"
+        ]
+    },
+    {
+        "dataCenterId": 359,
+        "location": {
+            "city": "Mumbai",
+            "region": "Maharashtra",
+            "country": "IN",
+            "latLong": [
+                "19.0728",
+                "72.8826"
+            ]
+        },
+        "ips": [
+            "128.116.104.33"
+        ]
+    },
+    {
+        "dataCenterId": 337,
+        "location": {
+            "city": "Tokyo",
+            "region": "Tokyo",
+            "country": "JP",
+            "latLong": [
+                "35.6895",
+                "139.6917"
+            ]
+        },
+        "ips": [
+            "128.116.55.33"
+        ]
+    },
+    {
+        "dataCenterId": 426,
+        "location": {
+            "city": "Ashburn",
+            "region": "Virginia",
+            "country": "US",
+            "latLong": [
+                "39.0437",
+                "-77.4875"
+            ]
+        },
+        "ips": [
+            "3.219.29.151"
+        ]
+    },
+    {
+        "dataCenterId": 299,
+        "location": {
+            "city": "Ashburn",
+            "region": "Virginia",
+            "country": "US",
+            "latLong": [
+                "39.0437",
+                "-77.4875"
+            ]
+        },
+        "ips": [
+            "128.116.53.33"
+        ]
+    },
+    {
+        "dataCenterId": 306,
+        "location": {
+            "city": "Chicago",
+            "region": "Illinois",
+            "country": "US",
+            "latLong": [
+                "41.8500",
+                "-87.6500"
+            ]
+        },
+        "ips": [
+            "128.116.48.33"
+        ]
+    },
+    {
+        "dataCenterId": 387,
+        "location": {
+            "city": "Secaucus",
+            "region": "New Jersey",
+            "country": "US",
+            "latLong": [
+                "40.7895",
+                "-74.0565"
+            ]
+        },
+        "ips": [
+            "128.116.32.33"
+        ]
+    },
+    {
+        "dataCenterId": 375,
+        "location": {
+            "city": "Dallas",
+            "region": "Texas",
+            "country": "US",
+            "latLong": [
+                "32.7831",
+                "-96.8067"
+            ]
+        },
+        "ips": [
+            "128.116.95.33"
+        ]
+    },
+    {
+        "dataCenterId": 374,
+        "location": {
+            "city": "Miami",
+            "region": "Florida",
+            "country": "US",
+            "latLong": [
+                "25.7743",
+                "-80.1937"
+            ]
+        },
+        "ips": [
+            "128.116.45.33"
+        ]
+    },
+    {
+        "dataCenterId": 417,
+        "location": {
+            "city": "Singapore",
+            "region": "Singapore",
+            "country": "SG",
+            "latLong": [
+                "1.2897",
+                "103.8501"
+            ]
+        },
+        "ips": [
+            "128.116.50.33"
+        ]
+    },
+    {
+        "dataCenterId": 370,
+        "location": {
+            "city": "Los Angeles",
+            "region": "California",
+            "country": "US",
+            "latLong": [
+                "34.0522",
+                "-118.2437"
+            ]
+        },
+        "ips": [
+            "128.116.1.33"
+        ]
+    },
+    {
+        "dataCenterId": 432,
+        "location": {
+            "city": "Miami",
+            "region": "Florida",
+            "country": "US",
+            "latLong": [
+                "25.7743",
+                "-80.1937"
+            ]
+        },
+        "ips": [
+            "128.116.127.33"
+        ]
+    },
+    {
+        "dataCenterId": 413,
+        "location": {
+            "city": "Los Angeles",
+            "region": "California",
+            "country": "US",
+            "latLong": [
+                "34.0522",
+                "-118.2437"
+            ]
+        },
+        "ips": [
+            "128.116.63.33"
+        ]
+    },
+    {
+        "dataCenterId": 302,
+        "location": {
+            "city": "Al-'Ubūr",
+            "region": "Qalyubia",
+            "country": "EG",
+            "latLong": [
+                "30.2289",
+                "31.4815"
+            ]
+        },
+        "ips": [
+            "128.116.33.33"
+        ]
+    },
+    {
+        "dataCenterId": 442,
+        "location": {
+            "city": "Reston",
+            "region": "Virginia",
+            "country": "US",
+            "latLong": [
+                "38.9687",
+                "-77.3411"
+            ]
+        },
+        "ips": [
+            "128.116.56.33"
+        ]
+    },
+    {
+        "dataCenterId": 431,
+        "location": {
+            "city": "Seattle",
+            "region": "Washington",
+            "country": "US",
+            "latLong": [
+                "47.6062",
+                "-122.3321"
+            ]
+        },
+        "ips": [
+            "128.116.115.33"
+        ]
+    },
+    {
+        "dataCenterId": 378,
+        "location": {
+            "city": "Frankfurt am Main",
+            "region": "Hesse",
+            "country": "DE",
+            "latLong": [
+                "50.1155",
+                "8.6842"
+            ]
+        },
+        "ips": [
+            "128.116.44.33"
+        ]
+    },
+    {
+        "dataCenterId": 369,
+        "location": {
+            "city": "Sydney",
+            "region": "New South Wales",
+            "country": "AU",
+            "latLong": [
+                "-33.8678",
+                "151.2073"
+            ]
+        },
+        "ips": [
+            "128.116.51.33"
+        ]
+    },
+    {
+        "dataCenterId": 352,
+        "location": {
+            "city": "Frankfurt am Main",
+            "region": "Hesse",
+            "country": "DE",
+            "latLong": [
+                "50.1155",
+                "8.6842"
+            ]
+        },
+        "ips": [
+            "128.116.5.33"
+        ]
+    },
+    {
+        "dataCenterId": 337,
+        "location": {
+            "city": "Tokyo",
+            "region": "Tokyo",
+            "country": "JP",
+            "latLong": [
+                "35.6895",
+                "139.6917"
+            ]
+        },
+        "ips": [
+            "128.116.55.33"
+        ]
+    },
+    {
+        "dataCenterId": 295,
+        "location": {
+            "city": "Singapore",
+            "region": "Singapore",
+            "country": "SG",
+            "latLong": [
+                "1.2897",
+                "103.8501"
+            ]
+        },
+        "ips": [
+            "128.116.97.33"
+        ]
+    },
+    {
+        "dataCenterId": 359,
+        "location": {
+            "city": "Mumbai",
+            "region": "Maharashtra",
+            "country": "IN",
+            "latLong": [
+                "19.0728",
+                "72.8826"
+            ]
+        },
+        "ips": [
+            "128.116.104.33"
+        ]
+    },
+    {
+        "dataCenterId": 388,
+        "location": {
+            "city": "Amsterdam",
+            "region": "North Holland",
+            "country": "NL",
+            "latLong": [
+                "52.3740",
+                "4.8897"
+            ]
+        },
+        "ips": [
+            "128.116.21.33"
+        ]
+    },
+    {
+        "dataCenterId": 437,
+        "location": {
+            "city": "Paris",
+            "region": "Île-de-France",
+            "country": "FR",
+            "latLong": [
+                "48.8534",
+                "2.3488"
+            ]
+        },
+        "ips": [
+            "128.116.13.33"
+        ]
+    },
+    {
+        "dataCenterId": 335,
+        "location": {
+            "city": "Chicago",
+            "region": "Illinois",
+            "country": "US",
+            "latLong": [
+                "41.8500",
+                "-87.6500"
+            ]
+        },
+        "ips": [
+            "128.116.48.33"
+        ]
+    },
+    {
+        "dataCenterId": 374,
+        "location": {
+            "city": "Miami",
+            "region": "Florida",
+            "country": "US",
+            "latLong": [
+                "25.7743",
+                "-80.1937"
+            ]
+        },
+        "ips": [
+            "128.116.45.33"
+        ]
+    },
+    {
+        "dataCenterId": 370,
+        "location": {
+            "city": "Los Angeles",
+            "region": "California",
+            "country": "US",
+            "latLong": [
+                "34.0522",
+                "-118.2437"
+            ]
+        },
+        "ips": [
+            "128.116.1.33"
+        ]
+    },
+    {
+        "dataCenterId": 417,
+        "location": {
+            "city": "Singapore",
+            "region": "Singapore",
+            "country": "SG",
+            "latLong": [
+                "1.2897",
+                "103.8501"
+            ]
+        },
+        "ips": [
+            "128.116.50.33"
+        ]
+    },
+    {
+        "dataCenterId": 387,
+        "location": {
+            "city": "Secaucus",
+            "region": "New Jersey",
+            "country": "US",
+            "latLong": [
+                "40.7895",
+                "-74.0565"
+            ]
+        },
+        "ips": [
+            "128.116.32.33"
+        ]
+    },
+    {
+        "dataCenterId": 442,
+        "location": {
+            "city": "Reston",
+            "region": "Virginia",
+            "country": "US",
+            "latLong": [
+                "38.9687",
+                "-77.3411"
+            ]
+        },
+        "ips": [
+            "128.116.56.33"
+        ]
+    },
+    {
+        "dataCenterId": 434,
+        "location": {
+            "city": "Miami",
+            "region": "Florida",
+            "country": "US",
+            "latLong": [
+                "25.7743",
+                "-80.1937"
+            ]
+        },
+        "ips": [
+            "128.116.127.33"
+        ]
+    },
+    {
+        "dataCenterId": 375,
+        "location": {
+            "city": "Dallas",
+            "region": "Texas",
+            "country": "US",
+            "latLong": [
+                "32.7831",
+                "-96.8067"
+            ]
+        },
+        "ips": [
+            "128.116.95.33"
+        ]
+    },
+    {
+        "dataCenterId": 404,
+        "location": {
+            "city": "Los Angeles",
+            "region": "California",
+            "country": "US",
+            "latLong": [
+                "34.0522",
+                "-118.2437"
+            ]
+        },
+        "ips": [
+            "128.116.63.33"
+        ]
+    },
+    {
+        "dataCenterId": 299,
+        "location": {
+            "city": "Ashburn",
+            "region": "Virginia",
+            "country": "US",
+            "latLong": [
+                "39.0437",
+                "-77.4875"
+            ]
+        },
+        "ips": [
+            "128.116.53.33"
+        ]
+    },
+    {
+        "dataCenterId": 431,
+        "location": {
+            "city": "Seattle",
+            "region": "Washington",
+            "country": "US",
+            "latLong": [
+                "47.6062",
+                "-122.3321"
+            ]
+        },
+        "ips": [
+            "128.116.115.33"
+        ]
+    },
+    {
+        "dataCenterId": 302,
+        "location": {
+            "city": "Al-'Ubūr",
+            "region": "Qalyubia",
+            "country": "EG",
+            "latLong": [
+                "30.2289",
+                "31.4815"
+            ]
+        },
+        "ips": [
+            "128.116.33.33"
+        ]
+    },
+    {
+        "dataCenterId": 369,
+        "location": {
+            "city": "Sydney",
+            "region": "New South Wales",
+            "country": "AU",
+            "latLong": [
+                "-33.8678",
+                "151.2073"
+            ]
+        },
+        "ips": [
+            "128.116.51.33"
+        ]
+    },
+    {
+        "dataCenterId": 378,
+        "location": {
+            "city": "Frankfurt am Main",
+            "region": "Hesse",
+            "country": "DE",
+            "latLong": [
+                "50.1155",
+                "8.6842"
+            ]
+        },
+        "ips": [
+            "128.116.44.33"
+        ]
+    },
+    {
+        "dataCenterId": 425,
+        "location": {
+            "city": "Tokyo",
+            "region": "Tokyo",
+            "country": "JP",
+            "latLong": [
+                "35.6895",
+                "139.6917"
+            ]
+        },
+        "ips": [
+            "128.116.55.33"
+        ]
+    },
+    {
+        "dataCenterId": 295,
+        "location": {
+            "city": "Singapore",
+            "region": "Singapore",
+            "country": "SG",
+            "latLong": [
+                "1.2897",
+                "103.8501"
+            ]
+        },
+        "ips": [
+            "128.116.97.33"
+        ]
+    },
+    {
+        "dataCenterId": 359,
+        "location": {
+            "city": "Mumbai",
+            "region": "Maharashtra",
+            "country": "IN",
+            "latLong": [
+                "19.0728",
+                "72.8826"
+            ]
+        },
+        "ips": [
+            "128.116.104.33"
+        ]
+    },
+    {
+        "dataCenterId": 352,
+        "location": {
+            "city": "Frankfurt am Main",
+            "region": "Hesse",
+            "country": "DE",
+            "latLong": [
+                "50.1155",
+                "8.6842"
+            ]
+        },
+        "ips": [
+            "128.116.5.33"
+        ]
+    },
+    {
+        "dataCenterId": 388,
+        "location": {
+            "city": "Amsterdam",
+            "region": "North Holland",
+            "country": "NL",
+            "latLong": [
+                "52.3740",
+                "4.8897"
+            ]
+        },
+        "ips": [
+            "128.116.21.33"
+        ]
+    },
+    {
+        "dataCenterId": 437,
+        "location": {
+            "city": "Paris",
+            "region": "Île-de-France",
+            "country": "FR",
+            "latLong": [
+                "48.8534",
+                "2.3488"
+            ]
+        },
+        "ips": [
+            "128.116.13.33"
+        ]
+    },
+    {
+        "dataCenterId": 387,
+        "location": {
+            "city": "Secaucus",
+            "region": "New Jersey",
+            "country": "US",
+            "latLong": [
+                "40.7895",
+                "-74.0565"
+            ]
+        },
+        "ips": [
+            "128.116.32.33"
+        ]
+    },
+    {
+        "dataCenterId": 414,
+        "location": {
+            "city": "Los Angeles",
+            "region": "California",
+            "country": "US",
+            "latLong": [
+                "34.0522",
+                "-118.2437"
+            ]
+        },
+        "ips": [
+            "128.116.63.33"
+        ]
+    },
+    {
+        "dataCenterId": 375,
+        "location": {
+            "city": "Dallas",
+            "region": "Texas",
+            "country": "US",
+            "latLong": [
+                "32.7831",
+                "-96.8067"
+            ]
+        },
+        "ips": [
+            "128.116.95.33"
+        ]
+    },
+    {
+        "dataCenterId": 369,
+        "location": {
+            "city": "Sydney",
+            "region": "New South Wales",
+            "country": "AU",
+            "latLong": [
+                "-33.8678",
+                "151.2073"
+            ]
+        },
+        "ips": [
+            "128.116.51.33"
+        ]
+    },
+    {
+        "dataCenterId": 442,
+        "location": {
+            "city": "Reston",
+            "region": "Virginia",
+            "country": "US",
+            "latLong": [
+                "38.9687",
+                "-77.3411"
+            ]
+        },
+        "ips": [
+            "128.116.56.33"
+        ]
+    },
+    {
+        "dataCenterId": 299,
+        "location": {
+            "city": "Ashburn",
+            "region": "Virginia",
+            "country": "US",
+            "latLong": [
+                "39.0437",
+                "-77.4875"
+            ]
+        },
+        "ips": [
+            "128.116.53.33"
+        ]
+    },
+    {
+        "dataCenterId": 433,
+        "location": {
+            "city": "Miami",
+            "region": "Florida",
+            "country": "US",
+            "latLong": [
+                "25.7743",
+                "-80.1937"
+            ]
+        },
+        "ips": [
+            "128.116.127.33"
+        ]
+    },
+    {
+        "dataCenterId": 335,
+        "location": {
+            "city": "Chicago",
+            "region": "Illinois",
+            "country": "US",
+            "latLong": [
+                "41.8500",
+                "-87.6500"
+            ]
+        },
+        "ips": [
+            "128.116.48.33"
+        ]
+    },
+    {
+        "dataCenterId": 431,
+        "location": {
+            "city": "Seattle",
+            "region": "Washington",
+            "country": "US",
+            "latLong": [
+                "47.6062",
+                "-122.3321"
+            ]
+        },
+        "ips": [
+            "128.116.115.33"
+        ]
+    },
+    {
+        "dataCenterId": 370,
+        "location": {
+            "city": "Los Angeles",
+            "region": "California",
+            "country": "US",
+            "latLong": [
+                "34.0522",
+                "-118.2437"
+            ]
+        },
+        "ips": [
+            "128.116.1.33"
+        ]
+    },
+    {
+        "dataCenterId": 372,
+        "location": {
+            "city": "Singapore",
+            "region": "Singapore",
+            "country": "SG",
+            "latLong": [
+                "1.2897",
+                "103.8501"
+            ]
+        },
+        "ips": [
+            "128.116.50.33"
+        ]
+    },
+    {
+        "dataCenterId": 374,
+        "location": {
+            "city": "Miami",
+            "region": "Florida",
+            "country": "US",
+            "latLong": [
+                "25.7743",
+                "-80.1937"
+            ]
+        },
+        "ips": [
+            "128.116.45.33"
+        ]
+    },
+    {
+        "dataCenterId": 302,
+        "location": {
+            "city": "Al-'Ubūr",
+            "region": "Qalyubia",
+            "country": "EG",
+            "latLong": [
+                "30.2289",
+                "31.4815"
+            ]
+        },
+        "ips": [
+            "128.116.33.33"
+        ]
+    },
+    {
+        "dataCenterId": 378,
+        "location": {
+            "city": "Frankfurt am Main",
+            "region": "Hesse",
+            "country": "DE",
+            "latLong": [
+                "50.1155",
+                "8.6842"
+            ]
+        },
+        "ips": [
+            "128.116.44.33"
+        ]
+    },
+    {
+        "dataCenterId": 425,
+        "location": {
+            "city": "Tokyo",
+            "region": "Tokyo",
+            "country": "JP",
+            "latLong": [
+                "35.6895",
+                "139.6917"
+            ]
+        },
+        "ips": [
+            "128.116.55.33"
+        ]
+    },
+    {
+        "dataCenterId": 295,
+        "location": {
+            "city": "Singapore",
+            "region": "Singapore",
+            "country": "SG",
+            "latLong": [
+                "1.2897",
+                "103.8501"
+            ]
+        },
+        "ips": [
+            "128.116.97.33"
+        ]
+    },
+    {
+        "dataCenterId": 388,
+        "location": {
+            "city": "Amsterdam",
+            "region": "North Holland",
+            "country": "NL",
+            "latLong": [
+                "52.3740",
+                "4.8897"
+            ]
+        },
+        "ips": [
+            "128.116.21.33"
+        ]
+    },
+    {
+        "dataCenterId": 437,
+        "location": {
+            "city": "Paris",
+            "region": "Île-de-France",
+            "country": "FR",
+            "latLong": [
+                "48.8534",
+                "2.3488"
+            ]
+        },
+        "ips": [
+            "128.116.13.33"
+        ]
+    },
+    {
+        "dataCenterId": 353,
+        "location": {
+            "city": "Frankfurt am Main",
+            "region": "Hesse",
+            "country": "DE",
+            "latLong": [
+                "50.1155",
+                "8.6842"
+            ]
+        },
+        "ips": [
+            "128.116.5.33"
+        ]
+    },
+    {
+        "dataCenterId": 359,
+        "location": {
+            "city": "Mumbai",
+            "region": "Maharashtra",
+            "country": "IN",
+            "latLong": [
+                "19.0728",
+                "72.8826"
+            ]
+        },
+        "ips": [
+            "128.116.104.33"
+        ]
+    },
+    {
+        "dataCenterId": 426,
+        "location": {
+            "city": "Ashburn",
+            "region": "Virginia",
+            "country": "US",
+            "latLong": [
+                "39.0437",
+                "-77.4875"
+            ]
+        },
+        "ips": [
+            "3.219.29.151"
+        ]
+    },
+    {
+        "dataCenterId": 387,
+        "location": {
+            "city": "Secaucus",
+            "region": "New Jersey",
+            "country": "US",
+            "latLong": [
+                "40.7895",
+                "-74.0565"
+            ]
+        },
+        "ips": [
+            "128.116.32.33"
+        ]
+    },
+    {
+        "dataCenterId": 299,
+        "location": {
+            "city": "Ashburn",
+            "region": "Virginia",
+            "country": "US",
+            "latLong": [
+                "39.0437",
+                "-77.4875"
+            ]
+        },
+        "ips": [
+            "128.116.53.33"
+        ]
+    },
+    {
+        "dataCenterId": 442,
+        "location": {
+            "city": "Reston",
+            "region": "Virginia",
+            "country": "US",
+            "latLong": [
+                "38.9687",
+                "-77.3411"
+            ]
+        },
+        "ips": [
+            "128.116.56.33"
+        ]
+    },
+    {
+        "dataCenterId": 374,
+        "location": {
+            "city": "Miami",
+            "region": "Florida",
+            "country": "US",
+            "latLong": [
+                "25.7743",
+                "-80.1937"
+            ]
+        },
+        "ips": [
+            "128.116.45.33"
+        ]
+    },
+    {
+        "dataCenterId": 370,
+        "location": {
+            "city": "Los Angeles",
+            "region": "California",
+            "country": "US",
+            "latLong": [
+                "34.0522",
+                "-118.2437"
+            ]
+        },
+        "ips": [
+            "128.116.1.33"
+        ]
+    },
+    {
+        "dataCenterId": 375,
+        "location": {
+            "city": "Dallas",
+            "region": "Texas",
+            "country": "US",
+            "latLong": [
+                "32.7831",
+                "-96.8067"
+            ]
+        },
+        "ips": [
+            "128.116.95.33"
+        ]
+    },
+    {
+        "dataCenterId": 369,
+        "location": {
+            "city": "Sydney",
+            "region": "New South Wales",
+            "country": "AU",
+            "latLong": [
+                "-33.8678",
+                "151.2073"
+            ]
+        },
+        "ips": [
+            "128.116.51.33"
+        ]
+    },
+    {
+        "dataCenterId": 431,
+        "location": {
+            "city": "Seattle",
+            "region": "Washington",
+            "country": "US",
+            "latLong": [
+                "47.6062",
+                "-122.3321"
+            ]
+        },
+        "ips": [
+            "128.116.115.33"
+        ]
+    },
+    {
+        "dataCenterId": 306,
+        "location": {
+            "city": "Chicago",
+            "region": "Illinois",
+            "country": "US",
+            "latLong": [
+                "41.8500",
+                "-87.6500"
+            ]
+        },
+        "ips": [
+            "128.116.48.33"
+        ]
+    },
+    {
+        "dataCenterId": 432,
+        "location": {
+            "city": "Miami",
+            "region": "Florida",
+            "country": "US",
+            "latLong": [
+                "25.7743",
+                "-80.1937"
+            ]
+        },
+        "ips": [
+            "128.116.127.33"
+        ]
+    },
+    {
+        "dataCenterId": 372,
+        "location": {
+            "city": "Singapore",
+            "region": "Singapore",
+            "country": "SG",
+            "latLong": [
+                "1.2897",
+                "103.8501"
+            ]
+        },
+        "ips": [
+            "128.116.50.33"
+        ]
+    },
+    {
+        "dataCenterId": 413,
+        "location": {
+            "city": "Los Angeles",
+            "region": "California",
+            "country": "US",
+            "latLong": [
+                "34.0522",
+                "-118.2437"
+            ]
+        },
+        "ips": [
+            "128.116.63.33"
+        ]
+    },
+    {
+        "dataCenterId": 302,
+        "location": {
+            "city": "Al-'Ubūr",
+            "region": "Qalyubia",
+            "country": "EG",
+            "latLong": [
+                "30.2289",
+                "31.4815"
+            ]
+        },
+        "ips": [
+            "128.116.33.33"
+        ]
+    },
+    {
+        "dataCenterId": 378,
+        "location": {
+            "city": "Frankfurt am Main",
+            "region": "Hesse",
+            "country": "DE",
+            "latLong": [
+                "50.1155",
+                "8.6842"
+            ]
+        },
+        "ips": [
+            "128.116.44.33"
+        ]
+    },
+    {
+        "dataCenterId": 425,
+        "location": {
+            "city": "Tokyo",
+            "region": "Tokyo",
+            "country": "JP",
+            "latLong": [
+                "35.6895",
+                "139.6917"
+            ]
+        },
+        "ips": [
+            "128.116.55.33"
+        ]
+    },
+    {
+        "dataCenterId": 295,
+        "location": {
+            "city": "Singapore",
+            "region": "Singapore",
+            "country": "SG",
+            "latLong": [
+                "1.2897",
+                "103.8501"
+            ]
+        },
+        "ips": [
+            "128.116.97.33"
+        ]
+    },
+    {
+        "dataCenterId": 352,
+        "location": {
+            "city": "Frankfurt am Main",
+            "region": "Hesse",
+            "country": "DE",
+            "latLong": [
+                "50.1155",
+                "8.6842"
+            ]
+        },
+        "ips": [
+            "128.116.5.33"
+        ]
+    },
+    {
+        "dataCenterId": 359,
+        "location": {
+            "city": "Mumbai",
+            "region": "Maharashtra",
+            "country": "IN",
+            "latLong": [
+                "19.0728",
+                "72.8826"
+            ]
+        },
+        "ips": [
+            "128.116.104.33"
+        ]
+    },
+    {
+        "dataCenterId": 388,
+        "location": {
+            "city": "Amsterdam",
+            "region": "North Holland",
+            "country": "NL",
+            "latLong": [
+                "52.3740",
+                "4.8897"
+            ]
+        },
+        "ips": [
+            "128.116.21.33"
+        ]
+    },
+    {
+        "dataCenterId": 437,
+        "location": {
+            "city": "Paris",
+            "region": "Île-de-France",
+            "country": "FR",
+            "latLong": [
+                "48.8534",
+                "2.3488"
+            ]
+        },
+        "ips": [
+            "128.116.13.33"
+        ]
+    },
+    {
+        "dataCenterId": 426,
+        "location": {
+            "city": "Ashburn",
+            "region": "Virginia",
+            "country": "US",
+            "latLong": [
+                "39.0437",
+                "-77.4875"
+            ]
+        },
+        "ips": [
+            "3.219.29.151"
+        ]
+    },
+    {
+        "dataCenterId": 442,
+        "location": {
+            "city": "Reston",
+            "region": "Virginia",
+            "country": "US",
+            "latLong": [
+                "38.9687",
+                "-77.3411"
+            ]
+        },
+        "ips": [
+            "128.116.56.33"
+        ]
+    },
+    {
+        "dataCenterId": 359,
+        "location": {
+            "city": "Mumbai",
+            "region": "Maharashtra",
+            "country": "IN",
+            "latLong": [
+                "19.0728",
+                "72.8826"
+            ]
+        },
+        "ips": [
+            "128.116.104.33"
+        ]
+    },
+    {
+        "dataCenterId": 353,
+        "location": {
+            "city": "Frankfurt am Main",
+            "region": "Hesse",
+            "country": "DE",
+            "latLong": [
+                "50.1155",
+                "8.6842"
+            ]
+        },
+        "ips": [
+            "128.116.5.33"
+        ]
+    },
+    {
+        "dataCenterId": 375,
+        "location": {
+            "city": "Dallas",
+            "region": "Texas",
+            "country": "US",
+            "latLong": [
+                "32.7831",
+                "-96.8067"
+            ]
+        },
+        "ips": [
+            "128.116.95.33"
+        ]
+    },
+    {
+        "dataCenterId": 433,
+        "location": {
+            "city": "Miami",
+            "region": "Florida",
+            "country": "US",
+            "latLong": [
+                "25.7743",
+                "-80.1937"
+            ]
+        },
+        "ips": [
+            "128.116.127.33"
+        ]
+    },
+    {
+        "dataCenterId": 369,
+        "location": {
+            "city": "Sydney",
+            "region": "New South Wales",
+            "country": "AU",
+            "latLong": [
+                "-33.8678",
+                "151.2073"
+            ]
+        },
+        "ips": [
+            "128.116.51.33"
+        ]
+    },
+    {
+        "dataCenterId": 365,
+        "location": {
+            "city": "Los Angeles",
+            "region": "California",
+            "country": "US",
+            "latLong": [
+                "34.0522",
+                "-118.2437"
+            ]
+        },
+        "ips": [
+            "128.116.1.33"
+        ]
+    },
+    {
+        "dataCenterId": 299,
+        "location": {
+            "city": "Ashburn",
+            "region": "Virginia",
+            "country": "US",
+            "latLong": [
+                "39.0437",
+                "-77.4875"
+            ]
+        },
+        "ips": [
+            "128.116.53.33"
+        ]
+    },
+    {
+        "dataCenterId": 374,
+        "location": {
+            "city": "Miami",
+            "region": "Florida",
+            "country": "US",
+            "latLong": [
+                "25.7743",
+                "-80.1937"
+            ]
+        },
+        "ips": [
+            "128.116.45.33"
+        ]
+    },
+    {
+        "dataCenterId": 372,
+        "location": {
+            "city": "Singapore",
+            "region": "Singapore",
+            "country": "SG",
+            "latLong": [
+                "1.2897",
+                "103.8501"
+            ]
+        },
+        "ips": [
+            "128.116.50.33"
+        ]
+    },
+    {
+        "dataCenterId": 378,
+        "location": {
+            "city": "Frankfurt am Main",
+            "region": "Hesse",
+            "country": "DE",
+            "latLong": [
+                "50.1155",
+                "8.6842"
+            ]
+        },
+        "ips": [
+            "128.116.44.33"
+        ]
+    },
+    {
+        "dataCenterId": 335,
+        "location": {
+            "city": "Chicago",
+            "region": "Illinois",
+            "country": "US",
+            "latLong": [
+                "41.8500",
+                "-87.6500"
+            ]
+        },
+        "ips": [
+            "128.116.48.33"
+        ]
+    },
+    {
+        "dataCenterId": 413,
+        "location": {
+            "city": "Los Angeles",
+            "region": "California",
+            "country": "US",
+            "latLong": [
+                "34.0522",
+                "-118.2437"
+            ]
+        },
+        "ips": [
+            "128.116.63.33"
+        ]
+    },
+    {
+        "dataCenterId": 388,
+        "location": {
+            "city": "Amsterdam",
+            "region": "North Holland",
+            "country": "NL",
+            "latLong": [
+                "52.3740",
+                "4.8897"
+            ]
+        },
+        "ips": [
+            "128.116.21.33"
+        ]
+    },
+    {
+        "dataCenterId": 302,
+        "location": {
+            "city": "Al-'Ubūr",
+            "region": "Qalyubia",
+            "country": "EG",
+            "latLong": [
+                "30.2289",
+                "31.4815"
+            ]
+        },
+        "ips": [
+            "128.116.33.33"
+        ]
+    },
+    {
+        "dataCenterId": 387,
+        "location": {
+            "city": "Secaucus",
+            "region": "New Jersey",
+            "country": "US",
+            "latLong": [
+                "40.7895",
+                "-74.0565"
+            ]
+        },
+        "ips": [
+            "128.116.32.33"
+        ]
+    },
+    {
+        "dataCenterId": 337,
+        "location": {
+            "city": "Tokyo",
+            "region": "Tokyo",
+            "country": "JP",
+            "latLong": [
+                "35.6895",
+                "139.6917"
+            ]
+        },
+        "ips": [
+            "128.116.55.33"
+        ]
+    },
+    {
+        "dataCenterId": 431,
+        "location": {
+            "city": "Seattle",
+            "region": "Washington",
+            "country": "US",
+            "latLong": [
+                "47.6062",
+                "-122.3321"
+            ]
+        },
+        "ips": [
+            "128.116.115.33"
+        ]
+    },
+    {
+        "dataCenterId": 295,
+        "location": {
+            "city": "Singapore",
+            "region": "Singapore",
+            "country": "SG",
+            "latLong": [
+                "1.2897",
+                "103.8501"
+            ]
+        },
+        "ips": [
+            "128.116.97.33"
+        ]
+    },
+    {
+        "dataCenterId": 437,
+        "location": {
+            "city": "Paris",
+            "region": "Île-de-France",
+            "country": "FR",
+            "latLong": [
+                "48.8534",
+                "2.3488"
+            ]
+        },
+        "ips": [
+            "128.116.13.33"
+        ]
+    },
+    {
+        "dataCenterId": 387,
+        "location": {
+            "city": "Secaucus",
+            "region": "New Jersey",
+            "country": "US",
+            "latLong": [
+                "40.7895",
+                "-74.0565"
+            ]
+        },
+        "ips": [
+            "128.116.32.33"
+        ]
+    },
+    {
+        "dataCenterId": 433,
+        "location": {
+            "city": "Miami",
+            "region": "Florida",
+            "country": "US",
+            "latLong": [
+                "25.7743",
+                "-80.1937"
+            ]
+        },
+        "ips": [
+            "128.116.127.33"
+        ]
+    },
+    {
+        "dataCenterId": 375,
+        "location": {
+            "city": "Dallas",
+            "region": "Texas",
+            "country": "US",
+            "latLong": [
+                "32.7831",
+                "-96.8067"
+            ]
+        },
+        "ips": [
+            "128.116.95.33"
+        ]
+    },
+    {
+        "dataCenterId": 442,
+        "location": {
+            "city": "Reston",
+            "region": "Virginia",
+            "country": "US",
+            "latLong": [
+                "38.9687",
+                "-77.3411"
+            ]
+        },
+        "ips": [
+            "128.116.56.33"
+        ]
+    },
+    {
+        "dataCenterId": 369,
+        "location": {
+            "city": "Sydney",
+            "region": "New South Wales",
+            "country": "AU",
+            "latLong": [
+                "-33.8678",
+                "151.2073"
+            ]
+        },
+        "ips": [
+            "128.116.51.33"
+        ]
+    },
+    {
+        "dataCenterId": 431,
+        "location": {
+            "city": "Seattle",
+            "region": "Washington",
+            "country": "US",
+            "latLong": [
+                "47.6062",
+                "-122.3321"
+            ]
+        },
+        "ips": [
+            "128.116.115.33"
+        ]
+    },
+    {
+        "dataCenterId": 302,
+        "location": {
+            "city": "Al-'Ubūr",
+            "region": "Qalyubia",
+            "country": "EG",
+            "latLong": [
+                "30.2289",
+                "31.4815"
+            ]
+        },
+        "ips": [
+            "128.116.33.33"
+        ]
+    },
+    {
+        "dataCenterId": 380,
+        "location": {
+            "city": "Los Angeles",
+            "region": "California",
+            "country": "US",
+            "latLong": [
+                "34.0522",
+                "-118.2437"
+            ]
+        },
+        "ips": [
+            "128.116.1.33"
+        ]
+    },
+    {
+        "dataCenterId": 306,
+        "location": {
+            "city": "Chicago",
+            "region": "Illinois",
+            "country": "US",
+            "latLong": [
+                "41.8500",
+                "-87.6500"
+            ]
+        },
+        "ips": [
+            "128.116.48.33"
+        ]
+    },
+    {
+        "dataCenterId": 412,
+        "location": {
+            "city": "Los Angeles",
+            "region": "California",
+            "country": "US",
+            "latLong": [
+                "34.0522",
+                "-118.2437"
+            ]
+        },
+        "ips": [
+            "128.116.63.33"
+        ]
+    },
+    {
+        "dataCenterId": 299,
+        "location": {
+            "city": "Ashburn",
+            "region": "Virginia",
+            "country": "US",
+            "latLong": [
+                "39.0437",
+                "-77.4875"
+            ]
+        },
+        "ips": [
+            "128.116.53.33"
+        ]
+    },
+    {
+        "dataCenterId": 374,
+        "location": {
+            "city": "Miami",
+            "region": "Florida",
+            "country": "US",
+            "latLong": [
+                "25.7743",
+                "-80.1937"
+            ]
+        },
+        "ips": [
+            "128.116.45.33"
+        ]
+    },
+    {
+        "dataCenterId": 372,
+        "location": {
+            "city": "Singapore",
+            "region": "Singapore",
+            "country": "SG",
+            "latLong": [
+                "1.2897",
+                "103.8501"
+            ]
+        },
+        "ips": [
+            "128.116.50.33"
+        ]
+    },
+    {
+        "dataCenterId": 425,
+        "location": {
+            "city": "Tokyo",
+            "region": "Tokyo",
+            "country": "JP",
+            "latLong": [
+                "35.6895",
+                "139.6917"
+            ]
+        },
+        "ips": [
+            "128.116.55.33"
+        ]
+    },
+    {
+        "dataCenterId": 378,
+        "location": {
+            "city": "Frankfurt am Main",
+            "region": "Hesse",
+            "country": "DE",
+            "latLong": [
+                "50.1155",
+                "8.6842"
+            ]
+        },
+        "ips": [
+            "128.116.44.33"
+        ]
+    },
+    {
+        "dataCenterId": 295,
+        "location": {
+            "city": "Singapore",
+            "region": "Singapore",
+            "country": "SG",
+            "latLong": [
+                "1.2897",
+                "103.8501"
+            ]
+        },
+        "ips": [
+            "128.116.97.33"
+        ]
+    },
+    {
+        "dataCenterId": 359,
+        "location": {
+            "city": "Mumbai",
+            "region": "Maharashtra",
+            "country": "IN",
+            "latLong": [
+                "19.0728",
+                "72.8826"
+            ]
+        },
+        "ips": [
+            "128.116.104.33"
+        ]
+    },
+    {
+        "dataCenterId": 352,
+        "location": {
+            "city": "Frankfurt am Main",
+            "region": "Hesse",
+            "country": "DE",
+            "latLong": [
+                "50.1155",
+                "8.6842"
+            ]
+        },
+        "ips": [
+            "128.116.5.33"
+        ]
+    },
+    {
+        "dataCenterId": 388,
+        "location": {
+            "city": "Amsterdam",
+            "region": "North Holland",
+            "country": "NL",
+            "latLong": [
+                "52.3740",
+                "4.8897"
+            ]
+        },
+        "ips": [
+            "128.116.21.33"
+        ]
+    },
+    {
+        "dataCenterId": 437,
+        "location": {
+            "city": "Paris",
+            "region": "Île-de-France",
+            "country": "FR",
+            "latLong": [
+                "48.8534",
+                "2.3488"
+            ]
+        },
+        "ips": [
+            "128.116.13.33"
+        ]
+    },
+    {
+        "dataCenterId": 426,
+        "location": {
+            "city": "Ashburn",
+            "region": "Virginia",
+            "country": "US",
+            "latLong": [
+                "39.0437",
+                "-77.4875"
+            ]
+        },
+        "ips": [
+            "3.219.29.151"
+        ]
+    },
+    {
+        "dataCenterId": 425,
+        "location": {
+            "city": "Tokyo",
+            "region": "Tokyo",
+            "country": "JP",
+            "latLong": [
+                "35.6895",
+                "139.6917"
+            ]
+        },
+        "ips": [
+            "128.116.55.33"
+        ]
+    },
+    {
+        "dataCenterId": 295,
+        "location": {
+            "city": "Singapore",
+            "region": "Singapore",
+            "country": "SG",
+            "latLong": [
+                "1.2897",
+                "103.8501"
+            ]
+        },
+        "ips": [
+            "128.116.97.33"
+        ]
+    },
+    {
+        "dataCenterId": 306,
+        "location": {
+            "city": "Chicago",
+            "region": "Illinois",
+            "country": "US",
+            "latLong": [
+                "41.8500",
+                "-87.6500"
+            ]
+        },
+        "ips": [
+            "128.116.48.33"
+        ]
+    },
+    {
+        "dataCenterId": 352,
+        "location": {
+            "city": "Frankfurt am Main",
+            "region": "Hesse",
+            "country": "DE",
+            "latLong": [
+                "50.1155",
+                "8.6842"
+            ]
+        },
+        "ips": [
+            "128.116.5.33"
+        ]
+    },
+    {
+        "dataCenterId": 388,
+        "location": {
+            "city": "Amsterdam",
+            "region": "North Holland",
+            "country": "NL",
+            "latLong": [
+                "52.3740",
+                "4.8897"
+            ]
+        },
+        "ips": [
+            "128.116.21.33"
+        ]
+    },
+    {
+        "dataCenterId": 359,
+        "location": {
+            "city": "Mumbai",
+            "region": "Maharashtra",
+            "country": "IN",
+            "latLong": [
+                "19.0728",
+                "72.8826"
+            ]
+        },
+        "ips": [
+            "128.116.104.33"
+        ]
+    },
+    {
+        "dataCenterId": 375,
+        "location": {
+            "city": "Dallas",
+            "region": "Texas",
+            "country": "US",
+            "latLong": [
+                "32.7831",
+                "-96.8067"
+            ]
+        },
+        "ips": [
+            "128.116.95.33"
+        ]
+    },
+    {
+        "dataCenterId": 387,
+        "location": {
+            "city": "Secaucus",
+            "region": "New Jersey",
+            "country": "US",
+            "latLong": [
+                "40.7895",
+                "-74.0565"
+            ]
+        },
+        "ips": [
+            "128.116.32.33"
+        ]
+    },
+    {
+        "dataCenterId": 299,
+        "location": {
+            "city": "Ashburn",
+            "region": "Virginia",
+            "country": "US",
+            "latLong": [
+                "39.0437",
+                "-77.4875"
+            ]
+        },
+        "ips": [
+            "128.116.53.33"
+        ]
+    },
+    {
+        "dataCenterId": 370,
+        "location": {
+            "city": "Los Angeles",
+            "region": "California",
+            "country": "US",
+            "latLong": [
+                "34.0522",
+                "-118.2437"
+            ]
+        },
+        "ips": [
+            "128.116.1.33"
+        ]
+    },
+    {
+        "dataCenterId": 442,
+        "location": {
+            "city": "Reston",
+            "region": "Virginia",
+            "country": "US",
+            "latLong": [
+                "38.9687",
+                "-77.3411"
+            ]
+        },
+        "ips": [
+            "128.116.56.33"
+        ]
+    },
+    {
+        "dataCenterId": 413,
+        "location": {
+            "city": "Los Angeles",
+            "region": "California",
+            "country": "US",
+            "latLong": [
+                "34.0522",
+                "-118.2437"
+            ]
+        },
+        "ips": [
+            "128.116.63.33"
+        ]
+    },
+    {
+        "dataCenterId": 302,
+        "location": {
+            "city": "Al-'Ubūr",
+            "region": "Qalyubia",
+            "country": "EG",
+            "latLong": [
+                "30.2289",
+                "31.4815"
+            ]
+        },
+        "ips": [
+            "128.116.33.33"
+        ]
+    },
+    {
+        "dataCenterId": 431,
+        "location": {
+            "city": "Seattle",
+            "region": "Washington",
+            "country": "US",
+            "latLong": [
+                "47.6062",
+                "-122.3321"
+            ]
+        },
+        "ips": [
+            "128.116.115.33"
+        ]
+    },
+    {
+        "dataCenterId": 434,
+        "location": {
+            "city": "Miami",
+            "region": "Florida",
+            "country": "US",
+            "latLong": [
+                "25.7743",
+                "-80.1937"
+            ]
+        },
+        "ips": [
+            "128.116.127.33"
+        ]
+    },
+    {
+        "dataCenterId": 369,
+        "location": {
+            "city": "Sydney",
+            "region": "New South Wales",
+            "country": "AU",
+            "latLong": [
+                "-33.8678",
+                "151.2073"
+            ]
+        },
+        "ips": [
+            "128.116.51.33"
+        ]
+    },
+    {
+        "dataCenterId": 374,
+        "location": {
+            "city": "Miami",
+            "region": "Florida",
+            "country": "US",
+            "latLong": [
+                "25.7743",
+                "-80.1937"
+            ]
+        },
+        "ips": [
+            "128.116.45.33"
+        ]
+    },
+    {
+        "dataCenterId": 372,
+        "location": {
+            "city": "Singapore",
+            "region": "Singapore",
+            "country": "SG",
+            "latLong": [
+                "1.2897",
+                "103.8501"
+            ]
+        },
+        "ips": [
+            "128.116.50.33"
+        ]
+    },
+    {
+        "dataCenterId": 378,
+        "location": {
+            "city": "Frankfurt am Main",
+            "region": "Hesse",
+            "country": "DE",
+            "latLong": [
+                "50.1155",
+                "8.6842"
+            ]
+        },
+        "ips": [
+            "128.116.44.33"
+        ]
+    },
+    {
+        "dataCenterId": 437,
+        "location": {
+            "city": "Paris",
+            "region": "Île-de-France",
+            "country": "FR",
+            "latLong": [
+                "48.8534",
+                "2.3488"
+            ]
+        },
+        "ips": [
+            "128.116.13.33"
+        ]
+    },
+    {
+        "dataCenterId": 426,
+        "location": {
+            "city": "Ashburn",
+            "region": "Virginia",
+            "country": "US",
+            "latLong": [
+                "39.0437",
+                "-77.4875"
+            ]
+        },
+        "ips": [
+            "3.219.29.151"
+        ]
+    },
+    {
+        "dataCenterId": 302,
+        "location": {
+            "city": "Al-'Ubūr",
+            "region": "Qalyubia",
+            "country": "EG",
+            "latLong": [
+                "30.2289",
+                "31.4815"
+            ]
+        },
+        "ips": [
+            "128.116.33.33"
+        ]
+    },
+    {
+        "dataCenterId": 431,
+        "location": {
+            "city": "Seattle",
+            "region": "Washington",
+            "country": "US",
+            "latLong": [
+                "47.6062",
+                "-122.3321"
+            ]
+        },
+        "ips": [
+            "128.116.115.33"
+        ]
+    },
+    {
+        "dataCenterId": 372,
+        "location": {
+            "city": "Singapore",
+            "region": "Singapore",
+            "country": "SG",
+            "latLong": [
+                "1.2897",
+                "103.8501"
+            ]
+        },
+        "ips": [
+            "128.116.50.33"
+        ]
+    },
+    {
+        "dataCenterId": 404,
+        "location": {
+            "city": "Los Angeles",
+            "region": "California",
+            "country": "US",
+            "latLong": [
+                "34.0522",
+                "-118.2437"
+            ]
+        },
+        "ips": [
+            "128.116.63.33"
+        ]
+    },
+    {
+        "dataCenterId": 306,
+        "location": {
+            "city": "Chicago",
+            "region": "Illinois",
+            "country": "US",
+            "latLong": [
+                "41.8500",
+                "-87.6500"
+            ]
+        },
+        "ips": [
+            "128.116.48.33"
+        ]
+    },
+    {
+        "dataCenterId": 432,
+        "location": {
+            "city": "Miami",
+            "region": "Florida",
+            "country": "US",
+            "latLong": [
+                "25.7743",
+                "-80.1937"
+            ]
+        },
+        "ips": [
+            "128.116.127.33"
+        ]
+    },
+    {
+        "dataCenterId": 299,
+        "location": {
+            "city": "Ashburn",
+            "region": "Virginia",
+            "country": "US",
+            "latLong": [
+                "39.0437",
+                "-77.4875"
+            ]
+        },
+        "ips": [
+            "128.116.53.33"
+        ]
+    },
+    {
+        "dataCenterId": 442,
+        "location": {
+            "city": "Reston",
+            "region": "Virginia",
+            "country": "US",
+            "latLong": [
+                "38.9687",
+                "-77.3411"
+            ]
+        },
+        "ips": [
+            "128.116.56.33"
+        ]
+    },
+    {
+        "dataCenterId": 380,
+        "location": {
+            "city": "Los Angeles",
+            "region": "California",
+            "country": "US",
+            "latLong": [
+                "34.0522",
+                "-118.2437"
+            ]
+        },
+        "ips": [
+            "128.116.1.33"
+        ]
+    },
+    {
+        "dataCenterId": 374,
+        "location": {
+            "city": "Miami",
+            "region": "Florida",
+            "country": "US",
+            "latLong": [
+                "25.7743",
+                "-80.1937"
+            ]
+        },
+        "ips": [
+            "128.116.45.33"
+        ]
+    },
+    {
+        "dataCenterId": 375,
+        "location": {
+            "city": "Dallas",
+            "region": "Texas",
+            "country": "US",
+            "latLong": [
+                "32.7831",
+                "-96.8067"
+            ]
+        },
+        "ips": [
+            "128.116.95.33"
+        ]
+    },
+    {
+        "dataCenterId": 337,
+        "location": {
+            "city": "Tokyo",
+            "region": "Tokyo",
+            "country": "JP",
+            "latLong": [
+                "35.6895",
+                "139.6917"
+            ]
+        },
+        "ips": [
+            "128.116.55.33"
+        ]
+    },
+    {
+        "dataCenterId": 387,
+        "location": {
+            "city": "Secaucus",
+            "region": "New Jersey",
+            "country": "US",
+            "latLong": [
+                "40.7895",
+                "-74.0565"
+            ]
+        },
+        "ips": [
+            "128.116.32.33"
+        ]
+    },
+    {
+        "dataCenterId": 369,
+        "location": {
+            "city": "Sydney",
+            "region": "New South Wales",
+            "country": "AU",
+            "latLong": [
+                "-33.8678",
+                "151.2073"
+            ]
+        },
+        "ips": [
+            "128.116.51.33"
+        ]
+    },
+    {
+        "dataCenterId": 378,
+        "location": {
+            "city": "Frankfurt am Main",
+            "region": "Hesse",
+            "country": "DE",
+            "latLong": [
+                "50.1155",
+                "8.6842"
+            ]
+        },
+        "ips": [
+            "128.116.44.33"
+        ]
+    },
+    {
+        "dataCenterId": 353,
+        "location": {
+            "city": "Frankfurt am Main",
+            "region": "Hesse",
+            "country": "DE",
+            "latLong": [
+                "50.1155",
+                "8.6842"
+            ]
+        },
+        "ips": [
+            "128.116.5.33"
+        ]
+    },
+    {
+        "dataCenterId": 295,
+        "location": {
+            "city": "Singapore",
+            "region": "Singapore",
+            "country": "SG",
+            "latLong": [
+                "1.2897",
+                "103.8501"
+            ]
+        },
+        "ips": [
+            "128.116.97.33"
+        ]
+    },
+    {
+        "dataCenterId": 388,
+        "location": {
+            "city": "Amsterdam",
+            "region": "North Holland",
+            "country": "NL",
+            "latLong": [
+                "52.3740",
+                "4.8897"
+            ]
+        },
+        "ips": [
+            "128.116.21.33"
+        ]
+    },
+    {
+        "dataCenterId": 359,
+        "location": {
+            "city": "Mumbai",
+            "region": "Maharashtra",
+            "country": "IN",
+            "latLong": [
+                "19.0728",
+                "72.8826"
+            ]
+        },
+        "ips": [
+            "128.116.104.33"
+        ]
+    },
+    {
+        "dataCenterId": 437,
+        "location": {
+            "city": "Paris",
+            "region": "Île-de-France",
+            "country": "FR",
+            "latLong": [
+                "48.8534",
+                "2.3488"
+            ]
+        },
+        "ips": [
+            "128.116.13.33"
+        ]
+    },
+    {
+        "dataCenterId": 426,
+        "location": {
+            "city": "Ashburn",
+            "region": "Virginia",
+            "country": "US",
+            "latLong": [
+                "39.0437",
+                "-77.4875"
+            ]
+        },
+        "ips": [
+            "3.219.29.151"
+        ]
+    }
+]
