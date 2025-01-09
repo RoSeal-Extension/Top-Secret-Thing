@@ -10,6 +10,6 @@
 		"typescript": "^5.0.0"
 	},
 	"scripts": {
-		"run": "bun src/index.ts"
+		"start": "bun src/index.ts"
 	}
 }
