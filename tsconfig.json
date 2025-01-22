@@ -24,6 +24,6 @@
 		"noUnusedParameters": false,
 		"noPropertyAccessFromIndexSignature": false,
 
-		"types": ["@types/bun", "src/types/import.d.ts"]
+		"types": ["@types/bun", "./src/types/import.d.ts"]
 	}
 }
