@@ -1,5 +1,6 @@
 import {
 	IPINFO_ACCESS_TOKEN_ENV_KEY,
+	PRIVATE_ACCESS_COOKIE_ENV_KEY,
 	ROBLOX_SECURITY_TOKENS_ENV_PREFIX,
 } from "./constants";
 import {
@@ -19,6 +20,7 @@ export type DataCenterData = {
 		latLong: [string, string];
 	};
 	ips: string[];
+	internalIps: string[];
 };
 
 type RunIntervalData = {
@@ -30,6 +32,7 @@ type RunIntervalData = {
 
 type RunProps = {
 	robloxCookies: string[];
+	privateAccessCookie?: string;
 	ipInfoAccessToken: string;
 	dataCenters: DataCenterData[];
 	interval?: (data: RunIntervalData) => void;
@@ -37,6 +40,7 @@ type RunProps = {
 
 export default async function run({
 	robloxCookies,
+	privateAccessCookie,
 	ipInfoAccessToken,
 	dataCenters: _dataCenters,
 	interval,
@@ -112,6 +116,7 @@ export default async function run({
 						gameId: server.id,
 					},
 					robloxCookies[usedRobloxCookieIndex],
+					privateAccessCookie,
 				).then((data) => {
 					receivedCount++;
 
@@ -126,6 +131,8 @@ export default async function run({
 								`${experience.name} (${experience.universeId})`,
 								requestCount,
 								receivedCount,
+								server.id,
+								data.rcc.version,
 								rccChannelName,
 							);
 						}
@@ -144,22 +151,40 @@ export default async function run({
 								}
 
 								const latLong = ipInfo.loc.split(",") as [string, string];
+								if (!data.connection.address.startsWith("128.116.")) {
+									console.log(server.id, experience.rootPlaceId);
+								}
 
+								// remove last number of ip
+								const internalIPPrefix = data.internalConnection?.address
+									.split(".")
+									.slice(0, 3)
+									.join(".");
 								for (const item of dataCenters) {
 									const includesDataCenterId = item.ips.includes(
 										data.connection.address,
 									);
 									const includesIP = item.ips.includes(data.connection.address);
+									const includesInternalIPPrefix = internalIPPrefix
+										? item.internalIps.includes(internalIPPrefix)
+										: undefined;
 
 									if (includesIP && !includesDataCenterId) {
 										item.ips = item.ips.filter(
 											(ip) => ip !== data.connection.address,
 										);
+										if (internalIPPrefix)
+											item.internalIps = item.internalIps.filter(
+												(ip) => ip !== internalIPPrefix,
+											);
+
 										continue;
 									}
 
 									if (includesDataCenterId) {
 										if (!includesIP) item.ips.push(data.connection.address);
+										if (!includesInternalIPPrefix && internalIPPrefix)
+											item.internalIps.push(internalIPPrefix);
 
 										let otherIPChecked = false;
 
@@ -209,6 +234,7 @@ export default async function run({
 										latLong,
 									},
 									ips: [data.connection.address],
+									internalIps: internalIPPrefix ? [internalIPPrefix] : [],
 								});
 							});
 						}
@@ -231,6 +257,11 @@ export default async function run({
 
 if (import.meta.main) {
 	const ipInfoAccessToken = import.meta.env[IPINFO_ACCESS_TOKEN_ENV_KEY];
+	const privateAccessCookieRaw = import.meta.env[PRIVATE_ACCESS_COOKIE_ENV_KEY];
+	const privateAccessCookie = privateAccessCookieRaw
+		? `.ROBLOSECURITY=${privateAccessCookieRaw}`
+		: undefined;
+
 	if (!ipInfoAccessToken) {
 		throw new Error(
 			`"${IPINFO_ACCESS_TOKEN_ENV_KEY}" is not defined in the environment variables.`,
@@ -256,6 +287,7 @@ if (import.meta.main) {
 		.catch(() => []);
 	run({
 		robloxCookies,
+		privateAccessCookie,
 		ipInfoAccessToken,
 		dataCenters,
 		interval: ({ dataCenters, requestCount, receivedCount, totalPlaying }) => {

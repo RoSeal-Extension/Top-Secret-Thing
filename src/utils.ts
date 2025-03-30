@@ -92,6 +92,10 @@ export type ParsedGameServerJoinData = {
 		port: number;
 		isUdmuxProtected: boolean;
 	};
+	internalConnection?: {
+		address: string;
+		port: number;
+	};
 	datacenter: {
 		id: number;
 	};
@@ -104,6 +108,7 @@ export type ParsedGameServerJoinData = {
 export async function getGameServerJoinData(
 	request: GetGameServerJoinDataRequest,
 	cookie: string,
+	privateAccessCookie?: string,
 ): Promise<ParsedGameServerJoinData | null> {
 	while (true) {
 		try {
@@ -126,18 +131,49 @@ export async function getGameServerJoinData(
 			}
 
 			const data = (await res.json()) as InternalServerJoinData;
-			const { joinScript } = data;
+			const { joinScript, status } = data;
+
+			if (status !== 2 && status !== 22)
+				console.log(data.status, data.message, request.gameId, request.placeId);
+			if (status === 19 && privateAccessCookie) {
+				return getGameServerJoinData(request, privateAccessCookie);
+			}
+
 			if (!joinScript) {
 				return null;
 			}
 
+			if (joinScript.GameId !== request.gameId) {
+				console.log("gameId mismatch", request.gameId, joinScript.GameId);
+			}
+
+			/*const sessionData = JSON.parse(joinScript.SessionId);
+			if (sessionData) {
+				//console.log(sessionData);
+			}
+			/*
+			if (joinScriptUrl) {
+				const url = new URL(joinScriptUrl);
+				const ticket = url.searchParams.get("ticket");
+
+				if (ticket) {
+					const ticketData = JSON.parse(ticket);
+					console.log(ticketData);
+				}
+			}*/
+
 			const connection =
 				joinScript.UdmuxEndpoints?.[0] ?? joinScript.ServerConnections?.[0];
+			const internalConnection = joinScript.ServerConnections?.[0];
 			return {
 				connection: {
 					address: connection.Address,
 					port: connection.Port,
 					isUdmuxProtected: !!joinScript.UdmuxEndpoints?.length,
+				},
+				internalConnection: internalConnection && {
+					address: internalConnection.Address,
+					port: internalConnection.Port,
 				},
 				datacenter: {
 					id: joinScript.DataCenterId,
