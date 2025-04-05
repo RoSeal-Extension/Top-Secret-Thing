@@ -8,6 +8,7 @@ import {
 	getIpInfo,
 	listExperienceSorts,
 	listPublicServers,
+	shuffleArray,
 	type ListedExperience,
 } from "./utils";
 
@@ -48,7 +49,7 @@ export default async function run({
 	const dataCenters = [..._dataCenters];
 	let usedRobloxCookieIndex = 0;
 
-	const experiences: ListedExperience[] = [];
+	let experiences: ListedExperience[] = [];
 	let cursor: string | undefined;
 
 	const sessionId = crypto.randomUUID();
@@ -65,7 +66,7 @@ export default async function run({
 		for (const sort of data.sorts) {
 			if (sort.contentType === "Games" && "games" in sort) {
 				for (const experience of sort.games) {
-					experiences.unshift(experience);
+					experiences.push(experience);
 				}
 			}
 		}
@@ -75,6 +76,8 @@ export default async function run({
 		}
 		cursor = data.nextSortsPageToken;
 	}
+
+	experiences = shuffleArray(experiences);
 
 	const checkedIPsThisSession = new Set<string>();
 	const discoveredRCCChannelNames = new Set<string>();
