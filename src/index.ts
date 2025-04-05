@@ -161,9 +161,8 @@ export default async function run({
 									.slice(0, 3)
 									.join(".");
 								for (const item of dataCenters) {
-									const includesDataCenterId = item.ips.includes(
-										data.connection.address,
-									);
+									const includesDataCenterId =
+										item.dataCenterId === data.datacenter.id;
 									const includesIP = item.ips.includes(data.connection.address);
 									const includesInternalIPPrefix = internalIPPrefix
 										? item.internalIps.includes(internalIPPrefix)
