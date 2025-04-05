@@ -65,7 +65,7 @@ export default async function run({
 		for (const sort of data.sorts) {
 			if (sort.contentType === "Games" && "games" in sort) {
 				for (const experience of sort.games) {
-					experiences.push(experience);
+					experiences.unshift(experience);
 				}
 			}
 		}
@@ -167,18 +167,6 @@ export default async function run({
 									const includesInternalIPPrefix = internalIPPrefix
 										? item.internalIps.includes(internalIPPrefix)
 										: undefined;
-
-									if (includesIP && !includesDataCenterId) {
-										item.ips = item.ips.filter(
-											(ip) => ip !== data.connection.address,
-										);
-										if (internalIPPrefix)
-											item.internalIps = item.internalIps.filter(
-												(ip) => ip !== internalIPPrefix,
-											);
-
-										continue;
-									}
 
 									if (includesDataCenterId) {
 										if (!includesIP) item.ips.push(data.connection.address);
