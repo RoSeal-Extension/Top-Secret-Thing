@@ -161,7 +161,8 @@ export default async function run({
 								// remove last number of ip
 								const internalIPPrefix = data.internalConnection?.address
 									.split(".")
-									.slice(0, 3)
+									.slice(0, 2)
+									.concat("")
 									.join(".");
 								for (const item of dataCenters) {
 									const includesDataCenterId =
