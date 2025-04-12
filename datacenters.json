@@ -186,7 +186,9 @@
                 "-0.0800"
             ]
         },
-        "ips": [],
+        "ips": [
+            "128.116.33.33"
+        ],
         "internalIps": [
             "10.202."
         ]
@@ -1024,6 +1026,42 @@
         ],
         "internalIps": [
             "10.182."
+        ]
+    },
+    {
+        "dataCenterId": 463,
+        "location": {
+            "city": "Chicago",
+            "region": "Illinois",
+            "country": "US",
+            "latLong": [
+                "41.8500",
+                "-87.6500"
+            ]
+        },
+        "ips": [
+            "128.116.48.33"
+        ],
+        "internalIps": [
+            "10.186."
+        ]
+    },
+    {
+        "dataCenterId": 464,
+        "location": {
+            "city": "Chicago",
+            "region": "Illinois",
+            "country": "US",
+            "latLong": [
+                "41.8500",
+                "-87.6500"
+            ]
+        },
+        "ips": [
+            "128.116.48.33"
+        ],
+        "internalIps": [
+            "10.186."
         ]
     }
 ]
