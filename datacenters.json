@@ -1081,5 +1081,23 @@
         "internalIps": [
             "10.200."
         ]
+    },
+    {
+        "dataCenterId": 465,
+        "location": {
+            "city": "Singapore",
+            "region": "Singapore",
+            "country": "SG",
+            "latLong": [
+                "1.2897",
+                "103.8501"
+            ]
+        },
+        "ips": [
+            "128.116.50.33"
+        ],
+        "internalIps": [
+            "10.20."
+        ]
     }
 ]
