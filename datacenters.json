@@ -1099,5 +1099,23 @@
         "internalIps": [
             "10.20."
         ]
+    },
+    {
+        "dataCenterId": 436,
+        "location": {
+            "city": "Los Angeles",
+            "region": "California",
+            "country": "US",
+            "latLong": [
+                "34.0522",
+                "-118.2437"
+            ]
+        },
+        "ips": [
+            "128.116.1.33"
+        ],
+        "internalIps": [
+            "10.208."
+        ]
     }
 ]
