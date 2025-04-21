@@ -294,6 +294,18 @@ if (import.meta.main) {
 			);
 
 			Bun.write("datacenters.json", JSON.stringify(dataCenters, null, 4));
+			Bun.write(
+				"datacenters_roseal.json",
+				JSON.stringify(
+					dataCenters.map((datacenter) => ({
+						...datacenter,
+						ips: undefined,
+						internalIps: undefined,
+					})),
+					null,
+					4,
+				),
+			);
 		},
 	});
 }
