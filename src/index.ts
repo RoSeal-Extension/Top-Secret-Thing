@@ -293,6 +293,7 @@ if (import.meta.main) {
 				`${(process.memoryUsage().rss / 1024 / 1024).toFixed(1)} MB`,
 			);
 
+			dataCenters.sort((a, b) => a.dataCenterId - b.dataCenterId);
 			Bun.write("datacenters.json", JSON.stringify(dataCenters, null, 4));
 			Bun.write(
 				"datacenters_roseal.json",
