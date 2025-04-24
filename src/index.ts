@@ -273,7 +273,7 @@ if (import.meta.main) {
 		);
 	}
 
-	const dataCenters = await Bun.file("datacenters.json")
+	const dataCenters = await Bun.file("./data/datacenters.json")
 		.json()
 		.catch(() => []);
 	run({
