@@ -133,8 +133,15 @@ export async function getGameServerJoinData(
 			const data = (await res.json()) as InternalServerJoinData;
 			const { joinScript, status } = data;
 
-			if (status !== 2 && status !== 22)
+			if (status !== 2 && status !== 22) {
 				console.log(data.status, data.message, request.gameId, request.placeId);
+			}
+
+			if (status === 16) {
+				console.log("???");
+				continue;
+			}
+
 			if (status === 19 && privateAccessCookie) {
 				return getGameServerJoinData(request, privateAccessCookie);
 			}

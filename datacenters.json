@@ -1176,6 +1176,24 @@
         ]
     },
     {
+        "dataCenterId": 438,
+        "location": {
+            "city": "Ashburn",
+            "region": "Virginia",
+            "country": "US",
+            "latLong": [
+                "39.0437",
+                "-77.4875"
+            ]
+        },
+        "ips": [
+            "128.116.53.33"
+        ],
+        "internalIps": [
+            "10.200."
+        ]
+    },
+    {
         "dataCenterId": 440,
         "location": {
             "city": "Singapore",
