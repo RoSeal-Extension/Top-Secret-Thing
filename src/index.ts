@@ -294,9 +294,9 @@ if (import.meta.main) {
 			);
 
 			dataCenters.sort((a, b) => a.dataCenterId - b.dataCenterId);
-			Bun.write("datacenters.json", JSON.stringify(dataCenters, null, 4));
+			Bun.write("data/datacenters.json", JSON.stringify(dataCenters, null, 4));
 			Bun.write(
-				"datacenters_roseal.json",
+				"data/datacenters_without_ips.json",
 				JSON.stringify(
 					dataCenters.map((datacenter) => ({
 						...datacenter,
