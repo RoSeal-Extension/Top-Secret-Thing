@@ -768,7 +768,43 @@
         }
     },
     {
+        "dataCenterId": 475,
+        "location": {
+            "city": "Ashburn",
+            "region": "Virginia",
+            "country": "US",
+            "latLong": [
+                "39.0437",
+                "-77.4875"
+            ]
+        }
+    },
+    {
+        "dataCenterId": 478,
+        "location": {
+            "city": "Ashburn",
+            "region": "Virginia",
+            "country": "US",
+            "latLong": [
+                "39.0437",
+                "-77.4875"
+            ]
+        }
+    },
+    {
         "dataCenterId": 481,
+        "location": {
+            "city": "Ashburn",
+            "region": "Virginia",
+            "country": "US",
+            "latLong": [
+                "39.0437",
+                "-77.4875"
+            ]
+        }
+    },
+    {
+        "dataCenterId": 482,
         "location": {
             "city": "Ashburn",
             "region": "Virginia",
