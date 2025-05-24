@@ -254,12 +254,12 @@
     {
         "dataCenterId": 387,
         "location": {
-            "city": "New York City",
-            "region": "New York",
+            "city": "Secaucus",
+            "region": "New Jersey",
             "country": "US",
             "latLong": [
-                "40.7143",
-                "-74.0060"
+                "40.7895",
+                "-74.0565"
             ]
         }
     },
