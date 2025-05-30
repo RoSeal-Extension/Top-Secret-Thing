@@ -792,7 +792,31 @@
         }
     },
     {
+        "dataCenterId": 474,
+        "location": {
+            "city": "Reston",
+            "region": "Virginia",
+            "country": "US",
+            "latLong": [
+                "38.9687",
+                "-77.3411"
+            ]
+        }
+    },
+    {
         "dataCenterId": 475,
+        "location": {
+            "city": "Ashburn",
+            "region": "Virginia",
+            "country": "US",
+            "latLong": [
+                "39.0437",
+                "-77.4875"
+            ]
+        }
+    },
+    {
+        "dataCenterId": 477,
         "location": {
             "city": "Ashburn",
             "region": "Virginia",
