@@ -624,6 +624,18 @@
         }
     },
     {
+        "dataCenterId": 447,
+        "location": {
+            "city": "Los Angeles",
+            "region": "California",
+            "country": "US",
+            "latLong": [
+                "34.0522",
+                "-118.2437"
+            ]
+        }
+    },
+    {
         "dataCenterId": 448,
         "location": {
             "city": "Paris",
@@ -841,6 +853,18 @@
     },
     {
         "dataCenterId": 478,
+        "location": {
+            "city": "Ashburn",
+            "region": "Virginia",
+            "country": "US",
+            "latLong": [
+                "39.0437",
+                "-77.4875"
+            ]
+        }
+    },
+    {
+        "dataCenterId": 479,
         "location": {
             "city": "Ashburn",
             "region": "Virginia",
