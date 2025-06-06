@@ -254,12 +254,12 @@
     {
         "dataCenterId": 387,
         "location": {
-            "city": "Secaucus",
-            "region": "New Jersey",
+            "city": "New York City",
+            "region": "New York",
             "country": "US",
             "latLong": [
-                "40.7895",
-                "-74.0565"
+                "40.7143",
+                "-74.0060"
             ]
         }
     },
@@ -932,6 +932,54 @@
             "latLong": [
                 "39.0437",
                 "-77.4875"
+            ]
+        }
+    },
+    {
+        "dataCenterId": 487,
+        "location": {
+            "city": "Seattle",
+            "region": "Washington",
+            "country": "US",
+            "latLong": [
+                "47.5413",
+                "-122.3129"
+            ]
+        }
+    },
+    {
+        "dataCenterId": 491,
+        "location": {
+            "city": "Ashburn",
+            "region": "Virginia",
+            "country": "US",
+            "latLong": [
+                "39.0437",
+                "-77.4875"
+            ]
+        }
+    },
+    {
+        "dataCenterId": 493,
+        "location": {
+            "city": "Boardman",
+            "region": "Oregon",
+            "country": "US",
+            "latLong": [
+                "45.8399",
+                "-119.7006"
+            ]
+        }
+    },
+    {
+        "dataCenterId": 498,
+        "location": {
+            "city": "Columbus",
+            "region": "Ohio",
+            "country": "US",
+            "latLong": [
+                "39.9612",
+                "-82.9988"
             ]
         }
     }
