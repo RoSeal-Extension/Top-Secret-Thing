@@ -982,5 +982,17 @@
                 "-82.9988"
             ]
         }
+    },
+    {
+        "dataCenterId": 499,
+        "location": {
+            "city": "Columbus",
+            "region": "Ohio",
+            "country": "US",
+            "latLong": [
+                "39.9612",
+                "-82.9988"
+            ]
+        }
     }
 ]
