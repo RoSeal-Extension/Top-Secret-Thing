@@ -972,6 +972,30 @@
         }
     },
     {
+        "dataCenterId": 494,
+        "location": {
+            "city": "Boardman",
+            "region": "Oregon",
+            "country": "US",
+            "latLong": [
+                "45.8399",
+                "-119.7006"
+            ]
+        }
+    },
+    {
+        "dataCenterId": 495,
+        "location": {
+            "city": "Boardman",
+            "region": "Oregon",
+            "country": "US",
+            "latLong": [
+                "45.8399",
+                "-119.7006"
+            ]
+        }
+    },
+    {
         "dataCenterId": 498,
         "location": {
             "city": "Columbus",
@@ -992,6 +1016,42 @@
             "latLong": [
                 "39.9612",
                 "-82.9988"
+            ]
+        }
+    },
+    {
+        "dataCenterId": 500,
+        "location": {
+            "city": "Columbus",
+            "region": "Ohio",
+            "country": "US",
+            "latLong": [
+                "39.9612",
+                "-82.9988"
+            ]
+        }
+    },
+    {
+        "dataCenterId": 501,
+        "location": {
+            "city": "Columbus",
+            "region": "Ohio",
+            "country": "US",
+            "latLong": [
+                "39.9612",
+                "-82.9988"
+            ]
+        }
+    },
+    {
+        "dataCenterId": 506,
+        "location": {
+            "city": "Ashburn",
+            "region": "Virginia",
+            "country": "US",
+            "latLong": [
+                "39.0437",
+                "-77.4875"
             ]
         }
     }
