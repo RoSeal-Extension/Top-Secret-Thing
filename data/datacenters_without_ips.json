@@ -1008,6 +1008,18 @@
         }
     },
     {
+        "dataCenterId": 497,
+        "location": {
+            "city": "Boardman",
+            "region": "Oregon",
+            "country": "US",
+            "latLong": [
+                "45.8399",
+                "-119.7006"
+            ]
+        }
+    },
+    {
         "dataCenterId": 498,
         "location": {
             "city": "Columbus",
@@ -1117,6 +1129,18 @@
     },
     {
         "dataCenterId": 509,
+        "location": {
+            "city": "Ashburn",
+            "region": "Virginia",
+            "country": "US",
+            "latLong": [
+                "39.0437",
+                "-77.4875"
+            ]
+        }
+    },
+    {
+        "dataCenterId": 510,
         "location": {
             "city": "Ashburn",
             "region": "Virginia",

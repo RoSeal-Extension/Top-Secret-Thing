@@ -154,9 +154,9 @@ export default async function run({
 								}
 
 								const latLong = ipInfo.loc.split(",") as [string, string];
-								if (!data.connection.address.startsWith("128.116.")) {
+								/*if (!data.connection.address.startsWith("128.116.")) {
 									console.log(server.id, experience.rootPlaceId);
-								}
+								}*/
 
 								// remove last number of ip
 								const internalIPPrefix = data.internalConnection?.address
