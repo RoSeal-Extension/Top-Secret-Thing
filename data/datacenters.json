@@ -14469,5 +14469,23 @@
         "internalIps": [
             "10.206."
         ]
+    },
+    {
+        "dataCenterId": 532,
+        "location": {
+            "city": "Ashburn",
+            "region": "Virginia",
+            "country": "US",
+            "latLong": [
+                "39.0437",
+                "-77.4875"
+            ]
+        },
+        "ips": [
+            "35.175.125.179"
+        ],
+        "internalIps": [
+            "35.175."
+        ]
     }
 ]
