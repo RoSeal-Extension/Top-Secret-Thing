@@ -1272,6 +1272,18 @@
         }
     },
     {
+        "dataCenterId": 530,
+        "location": {
+            "city": "Ashburn",
+            "region": "Virginia",
+            "country": "US",
+            "latLong": [
+                "39.0437",
+                "-77.4875"
+            ]
+        }
+    },
+    {
         "dataCenterId": 531,
         "location": {
             "city": "Ashburn",
