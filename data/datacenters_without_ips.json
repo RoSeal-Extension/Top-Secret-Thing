@@ -1200,6 +1200,78 @@
         }
     },
     {
+        "dataCenterId": 523,
+        "location": {
+            "city": "Seattle",
+            "region": "Washington",
+            "country": "US",
+            "latLong": [
+                "47.5413",
+                "-122.3129"
+            ]
+        }
+    },
+    {
+        "dataCenterId": 525,
+        "location": {
+            "city": "Ashburn",
+            "region": "Virginia",
+            "country": "US",
+            "latLong": [
+                "39.0437",
+                "-77.4875"
+            ]
+        }
+    },
+    {
+        "dataCenterId": 527,
+        "location": {
+            "city": "Ashburn",
+            "region": "Virginia",
+            "country": "US",
+            "latLong": [
+                "39.0437",
+                "-77.4875"
+            ]
+        }
+    },
+    {
+        "dataCenterId": 528,
+        "location": {
+            "city": "Ashburn",
+            "region": "Virginia",
+            "country": "US",
+            "latLong": [
+                "39.0437",
+                "-77.4875"
+            ]
+        }
+    },
+    {
+        "dataCenterId": 529,
+        "location": {
+            "city": "Ashburn",
+            "region": "Virginia",
+            "country": "US",
+            "latLong": [
+                "39.0437",
+                "-77.4875"
+            ]
+        }
+    },
+    {
+        "dataCenterId": 531,
+        "location": {
+            "city": "Ashburn",
+            "region": "Virginia",
+            "country": "US",
+            "latLong": [
+                "39.0437",
+                "-77.4875"
+            ]
+        }
+    },
+    {
         "dataCenterId": 532,
         "location": {
             "city": "Ashburn",
