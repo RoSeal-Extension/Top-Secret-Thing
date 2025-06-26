@@ -1200,6 +1200,30 @@
         }
     },
     {
+        "dataCenterId": 513,
+        "location": {
+            "city": "Singapore",
+            "region": "Singapore",
+            "country": "SG",
+            "latLong": [
+                "1.2897",
+                "103.8501"
+            ]
+        }
+    },
+    {
+        "dataCenterId": 514,
+        "location": {
+            "city": "Singapore",
+            "region": "Singapore",
+            "country": "SG",
+            "latLong": [
+                "1.2897",
+                "103.8501"
+            ]
+        }
+    },
+    {
         "dataCenterId": 516,
         "location": {
             "city": "Singapore",
@@ -1208,6 +1232,42 @@
             "latLong": [
                 "1.2897",
                 "103.8501"
+            ]
+        }
+    },
+    {
+        "dataCenterId": 517,
+        "location": {
+            "city": "Singapore",
+            "region": "Singapore",
+            "country": "SG",
+            "latLong": [
+                "1.2897",
+                "103.8501"
+            ]
+        }
+    },
+    {
+        "dataCenterId": 519,
+        "location": {
+            "city": "Mumbai",
+            "region": "Maharashtra",
+            "country": "IN",
+            "latLong": [
+                "19.0728",
+                "72.8826"
+            ]
+        }
+    },
+    {
+        "dataCenterId": 521,
+        "location": {
+            "city": "Mumbai",
+            "region": "Maharashtra",
+            "country": "IN",
+            "latLong": [
+                "19.0728",
+                "72.8826"
             ]
         }
     },
