@@ -1286,12 +1286,12 @@
     {
         "dataCenterId": 523,
         "location": {
-            "city": "Seattle",
-            "region": "Washington",
+            "city": "Ashburn",
+            "region": "Virginia",
             "country": "US",
             "latLong": [
-                "47.5413",
-                "-122.3129"
+                "39.0437",
+                "-77.4875"
             ]
         }
     },
