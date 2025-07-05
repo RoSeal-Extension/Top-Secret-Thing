@@ -254,12 +254,12 @@
     {
         "dataCenterId": 387,
         "location": {
-            "city": "New York City",
-            "region": "New York",
+            "city": "Secaucus",
+            "region": "New Jersey",
             "country": "US",
             "latLong": [
-                "40.7143",
-                "-74.0060"
+                "40.7895",
+                "-74.0565"
             ]
         }
     },
@@ -1236,6 +1236,18 @@
         }
     },
     {
+        "dataCenterId": 515,
+        "location": {
+            "city": "Singapore",
+            "region": "Singapore",
+            "country": "SG",
+            "latLong": [
+                "1.2897",
+                "103.8501"
+            ]
+        }
+    },
+    {
         "dataCenterId": 516,
         "location": {
             "city": "Singapore",
@@ -1370,12 +1382,12 @@
     {
         "dataCenterId": 529,
         "location": {
-            "city": "Ashburn",
-            "region": "Virginia",
+            "city": "Seattle",
+            "region": "Washington",
             "country": "US",
             "latLong": [
-                "39.0437",
-                "-77.4875"
+                "47.5413",
+                "-122.3129"
             ]
         }
     },
