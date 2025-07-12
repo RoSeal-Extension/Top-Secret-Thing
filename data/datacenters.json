@@ -17211,5 +17211,23 @@
             "13.204.",
             "15.206."
         ]
+    },
+    {
+        "dataCenterId": 535,
+        "location": {
+            "city": "Reston",
+            "region": "Virginia",
+            "country": "US",
+            "latLong": [
+                "38.9687",
+                "-77.3411"
+            ]
+        },
+        "ips": [
+            "128.116.56.33"
+        ],
+        "internalIps": [
+            "10.190."
+        ]
     }
 ]
