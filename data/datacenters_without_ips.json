@@ -1272,6 +1272,18 @@
         }
     },
     {
+        "dataCenterId": 518,
+        "location": {
+            "city": "Mumbai",
+            "region": "Maharashtra",
+            "country": "IN",
+            "latLong": [
+                "19.0728",
+                "72.8826"
+            ]
+        }
+    },
+    {
         "dataCenterId": 519,
         "location": {
             "city": "Mumbai",
