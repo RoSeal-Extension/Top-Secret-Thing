@@ -1464,6 +1464,18 @@
         }
     },
     {
+        "dataCenterId": 536,
+        "location": {
+            "city": "Reston",
+            "region": "Virginia",
+            "country": "US",
+            "latLong": [
+                "38.9687",
+                "-77.3411"
+            ]
+        }
+    },
+    {
         "dataCenterId": 537,
         "location": {
             "city": "Reston",
