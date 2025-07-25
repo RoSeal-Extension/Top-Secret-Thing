@@ -1488,7 +1488,31 @@
         }
     },
     {
+        "dataCenterId": 25506,
+        "location": {
+            "city": "Tokyo",
+            "region": "Tokyo",
+            "country": "JP",
+            "latLong": [
+                "35.6895",
+                "139.6917"
+            ]
+        }
+    },
+    {
         "dataCenterId": 25508,
+        "location": {
+            "city": "Tokyo",
+            "region": "Tokyo",
+            "country": "JP",
+            "latLong": [
+                "35.6895",
+                "139.6917"
+            ]
+        }
+    },
+    {
+        "dataCenterId": 25510,
         "location": {
             "city": "Tokyo",
             "region": "Tokyo",
