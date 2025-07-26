@@ -1536,6 +1536,18 @@
         }
     },
     {
+        "dataCenterId": 25497,
+        "location": {
+            "city": "Frankfurt am Main",
+            "region": "Hesse",
+            "country": "DE",
+            "latLong": [
+                "50.1155",
+                "8.6842"
+            ]
+        }
+    },
+    {
         "dataCenterId": 25506,
         "location": {
             "city": "Tokyo",
@@ -1561,6 +1573,18 @@
     },
     {
         "dataCenterId": 25508,
+        "location": {
+            "city": "Tokyo",
+            "region": "Tokyo",
+            "country": "JP",
+            "latLong": [
+                "35.6895",
+                "139.6917"
+            ]
+        }
+    },
+    {
+        "dataCenterId": 25509,
         "location": {
             "city": "Tokyo",
             "region": "Tokyo",
