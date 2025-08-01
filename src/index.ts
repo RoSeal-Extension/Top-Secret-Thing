@@ -12,16 +12,23 @@ import {
 	type ListedExperience,
 } from "./utils";
 
+export type DataCenterLocation = {
+	city: string;
+	region: string;
+	country: string;
+	latLong: [string, string];
+};
+
 export type DataCenterData = {
 	dataCenterId: number;
-	location: {
-		city: string;
-		region: string;
-		country: string;
-		latLong: [string, string];
-	};
+	location: DataCenterLocation;
 	ips: string[];
 	internalIps: string[];
+};
+
+export type DataCenterGroupData = {
+	dataCenterIds: number[];
+	location: DataCenterLocation;
 };
 
 type RunIntervalData = {
@@ -293,19 +300,38 @@ if (import.meta.main) {
 				`${(process.memoryUsage().rss / 1024 / 1024).toFixed(1)} MB`,
 			);
 
-			dataCenters.sort((a, b) => a.dataCenterId - b.dataCenterId);
+			const dataCentersGroupData: DataCenterGroupData[] = [];
+			for (const dataCenter of dataCenters) {
+				const locationMatch = dataCentersGroupData.find((dataCenter2) => {
+					return (
+						dataCenter2.location.latLong[0] ===
+							dataCenter.location.latLong[0] &&
+						dataCenter2.location.latLong[1] === dataCenter.location.latLong[1]
+					);
+				});
+
+				if (locationMatch) {
+					locationMatch.dataCenterIds.push(dataCenter.dataCenterId);
+				} else {
+					dataCentersGroupData.push({
+						dataCenterIds: [dataCenter.dataCenterId],
+						location: dataCenter.location,
+					});
+				}
+			}
+
+			for (const item of dataCentersGroupData) {
+				item.dataCenterIds.sort((a, b) => a - b);
+			}
+
+			dataCentersGroupData.sort(
+				(a, b) => a.dataCenterIds[0] - b.dataCenterIds[0],
+			);
+
 			Bun.write("data/datacenters.json", JSON.stringify(dataCenters, null, 4));
 			Bun.write(
-				"data/datacenters_without_ips.json",
-				JSON.stringify(
-					dataCenters.map((datacenter) => ({
-						...datacenter,
-						ips: undefined,
-						internalIps: undefined,
-					})),
-					null,
-					4,
-				),
+				"data/grouped_datacenters.json",
+				JSON.stringify(dataCentersGroupData, null, 4),
 			);
 		},
 	});
