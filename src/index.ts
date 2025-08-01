@@ -303,11 +303,16 @@ if (import.meta.main) {
 			const dataCentersGroupData: DataCenterGroupData[] = [];
 			for (const dataCenter of dataCenters) {
 				const locationMatch = dataCentersGroupData.find((dataCenter2) => {
-					return (
-						dataCenter2.location.latLong[0] ===
-							dataCenter.location.latLong[0] &&
-						dataCenter2.location.latLong[1] === dataCenter.location.latLong[1]
+					const diffLat = Math.abs(
+						Number.parseFloat(dataCenter2.location.latLong[0]) -
+							Number.parseFloat(dataCenter.location.latLong[0]),
 					);
+					const diffLong = Math.abs(
+						Number.parseFloat(dataCenter2.location.latLong[1]) -
+							Number.parseFloat(dataCenter.location.latLong[1]),
+					);
+
+					return diffLat < 2 && diffLong < 2;
 				});
 
 				if (locationMatch) {
