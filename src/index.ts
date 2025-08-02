@@ -1,4 +1,5 @@
 import {
+	CITY_TO_NEW_LOCATION,
 	IPINFO_ACCESS_TOKEN_ENV_KEY,
 	PRIVATE_ACCESS_COOKIE_ENV_KEY,
 	ROBLOX_SECURITY_TOKENS_ENV_PREFIX,
@@ -320,7 +321,9 @@ if (import.meta.main) {
 				} else {
 					dataCentersGroupData.push({
 						dataCenterIds: [dataCenter.dataCenterId],
-						location: dataCenter.location,
+						location:
+							CITY_TO_NEW_LOCATION[dataCenter.location.city] ||
+							dataCenter.location,
 					});
 				}
 			}

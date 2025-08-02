@@ -1,3 +1,5 @@
+import type { DataCenterLocation } from ".";
+
 export const ROBLOX_SECURITY_TOKENS_ENV_PREFIX = "ROBLOX_SECURITY_TOKENS_";
 export const IPINFO_ACCESS_TOKEN_ENV_KEY = "IPINFO_ACCESS_TOKEN";
 export const PRIVATE_ACCESS_COOKIE_ENV_KEY =
@@ -5,3 +7,18 @@ export const PRIVATE_ACCESS_COOKIE_ENV_KEY =
 
 export const ROBLOX_USER_AGENT =
 	"Roblox/WinInet RobloxApp/0 (GlobalDist; RobloxDirectDownload)";
+
+export const CITY_TO_NEW_LOCATION: Record<string, DataCenterLocation> = {
+	Secaucus: {
+		city: "New York City",
+		region: "New York",
+		country: "US",
+		latLong: ["40.7128", "-74.0060"],
+	},
+	"Frankfurt am Main": {
+		city: "Frankfurt",
+		region: "Hesse",
+		country: "DE",
+		latLong: ["50.1155", "8.6842"],
+	},
+};

@@ -173,7 +173,7 @@
             25497
         ],
         "location": {
-            "city": "Frankfurt am Main",
+            "city": "Frankfurt",
             "region": "Hesse",
             "country": "DE",
             "latLong": [
@@ -264,12 +264,12 @@
             387
         ],
         "location": {
-            "city": "Secaucus",
-            "region": "New Jersey",
+            "city": "New York City",
+            "region": "New York",
             "country": "US",
             "latLong": [
-                "40.7895",
-                "-74.0565"
+                "40.7128",
+                "-74.0060"
             ]
         }
     },
