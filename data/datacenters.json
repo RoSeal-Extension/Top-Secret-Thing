@@ -33197,12 +33197,12 @@
     {
         "dataCenterId": 523,
         "location": {
-            "city": "Ashburn",
-            "region": "Virginia",
+            "city": "Chicago",
+            "region": "Illinois",
             "country": "US",
             "latLong": [
-                "39.0437",
-                "-77.4875"
+                "41.8500",
+                "-87.6500"
             ]
         },
         "ips": [
