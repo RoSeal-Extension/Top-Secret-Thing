@@ -341,6 +341,10 @@ if (import.meta.main) {
 				"data/grouped_datacenters.json",
 				JSON.stringify(dataCentersGroupData, null, 4),
 			);
+
+			Bun.$`git add . && git commit --message ${Date.now()} && git push`.catch(
+				console.log,
+			);
 		},
 	});
 }
