@@ -284,67 +284,77 @@ if (import.meta.main) {
 	const dataCenters = await Bun.file("./data/datacenters.json")
 		.json()
 		.catch(() => []);
-	run({
-		robloxCookies,
-		privateAccessCookie,
-		ipInfoAccessToken,
-		dataCenters,
-		interval: ({ dataCenters, requestCount, receivedCount, totalPlaying }) => {
-			console.log(
-				"Requested:",
+
+	while (true) {
+		console.log("Running again...");
+		await run({
+			robloxCookies,
+			privateAccessCookie,
+			ipInfoAccessToken,
+			dataCenters,
+			interval: async ({
+				dataCenters,
 				requestCount,
-				"Received:",
 				receivedCount,
-				"Total players",
 				totalPlaying,
-				"Memory usage:",
-				`${(process.memoryUsage().rss / 1024 / 1024).toFixed(1)} MB`,
-			);
+			}) => {
+				console.log(
+					"Requested:",
+					requestCount,
+					"Received:",
+					receivedCount,
+					"Total players",
+					totalPlaying,
+					"Memory usage:",
+					`${(process.memoryUsage().rss / 1024 / 1024).toFixed(1)} MB`,
+				);
 
-			const dataCentersGroupData: DataCenterGroupData[] = [];
-			for (const dataCenter of dataCenters) {
-				const locationMatch = dataCentersGroupData.find((dataCenter2) => {
-					const diffLat = Math.abs(
-						Number.parseFloat(dataCenter2.location.latLong[0]) -
-							Number.parseFloat(dataCenter.location.latLong[0]),
-					);
-					const diffLong = Math.abs(
-						Number.parseFloat(dataCenter2.location.latLong[1]) -
-							Number.parseFloat(dataCenter.location.latLong[1]),
-					);
+				const dataCentersGroupData: DataCenterGroupData[] = [];
+				for (const dataCenter of dataCenters) {
+					const locationMatch = dataCentersGroupData.find((dataCenter2) => {
+						const diffLat = Math.abs(
+							Number.parseFloat(dataCenter2.location.latLong[0]) -
+								Number.parseFloat(dataCenter.location.latLong[0]),
+						);
+						const diffLong = Math.abs(
+							Number.parseFloat(dataCenter2.location.latLong[1]) -
+								Number.parseFloat(dataCenter.location.latLong[1]),
+						);
 
-					return diffLat < 2 && diffLong < 2;
-				});
-
-				if (locationMatch) {
-					locationMatch.dataCenterIds.push(dataCenter.dataCenterId);
-				} else {
-					dataCentersGroupData.push({
-						dataCenterIds: [dataCenter.dataCenterId],
-						location:
-							CITY_TO_NEW_LOCATION[dataCenter.location.city] ||
-							dataCenter.location,
+						return diffLat < 2 && diffLong < 2;
 					});
+
+					if (locationMatch) {
+						locationMatch.dataCenterIds.push(dataCenter.dataCenterId);
+					} else {
+						dataCentersGroupData.push({
+							dataCenterIds: [dataCenter.dataCenterId],
+							location:
+								CITY_TO_NEW_LOCATION[dataCenter.location.city] ||
+								dataCenter.location,
+						});
+					}
 				}
-			}
 
-			for (const item of dataCentersGroupData) {
-				item.dataCenterIds.sort((a, b) => a - b);
-			}
+				for (const item of dataCentersGroupData) {
+					item.dataCenterIds.sort((a, b) => a - b);
+				}
 
-			dataCentersGroupData.sort(
-				(a, b) => a.dataCenterIds[0] - b.dataCenterIds[0],
-			);
+				dataCentersGroupData.sort(
+					(a, b) => a.dataCenterIds[0] - b.dataCenterIds[0],
+				);
 
-			Bun.write("data/datacenters.json", JSON.stringify(dataCenters, null, 4));
-			Bun.write(
-				"data/grouped_datacenters.json",
-				JSON.stringify(dataCentersGroupData, null, 4),
-			);
+				await Bun.write(
+					"data/datacenters.json",
+					JSON.stringify(dataCenters, null, 4),
+				);
+				await Bun.write(
+					"data/grouped_datacenters.json",
+					JSON.stringify(dataCentersGroupData, null, 4),
+				);
 
-			Bun.$`git add . && git commit --message ${Date.now()} && git push`.catch(
-				console.log,
-			);
-		},
-	});
+				await Bun.$`git add . && git commit --message ${Date.now()} && git push`;
+			},
+		});
+	}
 }
