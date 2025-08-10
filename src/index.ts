@@ -353,7 +353,7 @@ if (import.meta.main) {
 					JSON.stringify(dataCentersGroupData, null, 4),
 				);
 
-				await Bun.$`git add . && git commit --message ${Date.now()} && git push`.catch(
+				await Bun.$`git add data/grouped_datacenters.json && git commit --message ${Date.now()} && git push`.catch(
 					() => {},
 				);
 			},
