@@ -281,9 +281,7 @@ if (import.meta.main) {
 		);
 	}
 
-	const dataCenters = await Bun.file("./data/datacenters.json")
-		.json()
-		.catch(() => []);
+	const dataCenters = await Bun.file("./data/datacenters.json").json();
 
 	while (true) {
 		console.log("Running again...");
