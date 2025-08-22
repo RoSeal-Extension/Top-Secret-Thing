@@ -355,5 +355,19 @@
                 "-82.9988"
             ]
         }
+    },
+    {
+        "dataCenterIds": [
+            25785
+        ],
+        "location": {
+            "city": "San Jose",
+            "region": "California",
+            "country": "US",
+            "latLong": [
+                "37.3394",
+                "-121.8950"
+            ]
+        }
     }
 ]
