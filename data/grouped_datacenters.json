@@ -358,7 +358,23 @@
     },
     {
         "dataCenterIds": [
-            25785
+            25775
+        ],
+        "location": {
+            "city": "Dublin",
+            "region": "Leinster",
+            "country": "IE",
+            "latLong": [
+                "53.3331",
+                "-6.2489"
+            ]
+        }
+    },
+    {
+        "dataCenterIds": [
+            25785,
+            25787,
+            25788
         ],
         "location": {
             "city": "San Jose",
