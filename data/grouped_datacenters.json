@@ -358,7 +358,8 @@
     },
     {
         "dataCenterIds": [
-            25775
+            25775,
+            25777
         ],
         "location": {
             "city": "Dublin",
