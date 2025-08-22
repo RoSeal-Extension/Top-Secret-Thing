@@ -374,7 +374,9 @@
         "dataCenterIds": [
             25785,
             25787,
-            25788
+            25788,
+            25789,
+            25790
         ],
         "location": {
             "city": "San Jose",
