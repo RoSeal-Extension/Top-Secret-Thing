@@ -404,9 +404,9 @@ if (import.meta.main) {
 						),
 				]);
 
-				await Bun.$`git add data/grouped_datacenters.json && git commit --message ${Date.now()} && git push`.catch(
-					() => {},
-				);
+				await Bun.$`git add data/grouped_datacenters.json && git commit --message ${Date.now()} && git push`
+					.quiet()
+					.catch(() => {});
 			},
 		});
 	}
