@@ -186,6 +186,8 @@ export default async function run({
 							}
 
 							if (!hasCheckedThisSession) {
+								checkedIPsThisSession.add(ipAddress);
+
 								const ipInfo = await getIpInfo(
 									{
 										ip: ipAddress,
@@ -216,6 +218,7 @@ export default async function run({
 								}
 							}
 						} else {
+							checkedIPsThisSession.add(ipAddress);
 							// no data center found
 							const ipInfo = await getIpInfo(
 								{
