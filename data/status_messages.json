@@ -6,5 +6,9 @@
     {
         "statusCode": 12,
         "status": "You need to purchase access to this game before you can play."
+    },
+    {
+        "statusCode": 12,
+        "status": "Unable to join Game 312"
     }
 ]
