@@ -10,5 +10,9 @@
     {
         "statusCode": 12,
         "status": "Unable to join Game 312"
+    },
+    {
+        "statusCode": 0,
+        "status": null
     }
 ]
