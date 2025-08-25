@@ -197,9 +197,6 @@ export default async function run({
 
 								if ("bogon" in ipInfo) return;
 
-								if (!ipInfo.loc) {
-									console.log(ipInfo);
-								}
 								const latLong = ipInfo.loc.split(",") as [string, string];
 
 								if (
@@ -228,9 +225,6 @@ export default async function run({
 							);
 
 							if ("bogon" in ipInfo) return;
-							if (!ipInfo.loc) {
-								console.log(ipInfo);
-							}
 
 							const latLong = ipInfo.loc.split(",") as [string, string];
 
