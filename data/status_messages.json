@@ -22,5 +22,9 @@
     {
         "statusCode": 5,
         "status": null
+    },
+    {
+        "statusCode": 12,
+        "status": "Can't join private instance through specific joins"
     }
 ]
