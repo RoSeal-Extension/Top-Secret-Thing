@@ -7,10 +7,10 @@ import {
 import {
 	getGameServerJoinData,
 	getIpInfo,
+	type ListedExperience,
 	listExperienceSorts,
 	listPublicServers,
 	shuffleArray,
-	type ListedExperience,
 } from "./utils";
 
 export type DataCenterLocation = {
@@ -32,11 +32,18 @@ export type DataCenterGroupData = {
 	location: DataCenterLocation;
 };
 
+export type StatusMessage = {
+	statusCode: number;
+	status?: string;
+};
+
 type RunIntervalData = {
 	requestCount: number;
 	receivedCount: number;
 	totalPlaying: number;
 	dataCenters: DataCenterData[];
+	rccChannelNames?: string[];
+	statusMessages?: StatusMessage[];
 };
 
 type RunProps = {
@@ -44,6 +51,8 @@ type RunProps = {
 	privateAccessCookie?: string;
 	ipInfoAccessToken: string;
 	dataCenters: DataCenterData[];
+	rccChannelNames?: string[];
+	statusMessages?: StatusMessage[];
 	interval?: (data: RunIntervalData) => void;
 };
 
@@ -51,13 +60,14 @@ export default async function run({
 	robloxCookies,
 	privateAccessCookie,
 	ipInfoAccessToken,
-	dataCenters: _dataCenters,
+	dataCenters,
+	rccChannelNames,
+	statusMessages,
 	interval,
 }: RunProps) {
-	const dataCenters = [..._dataCenters];
 	let usedRobloxCookieIndex = 0;
 
-	let experiences: ListedExperience[] = [];
+	const experiences: ListedExperience[] = [];
 	let cursor: string | undefined;
 
 	const sessionId = crypto.randomUUID();
@@ -84,11 +94,9 @@ export default async function run({
 		}
 		cursor = data.nextSortsPageToken;
 	}
-
-	experiences = shuffleArray(experiences);
+	shuffleArray(experiences);
 
 	const checkedIPsThisSession = new Set<string>();
-	const discoveredRCCChannelNames = new Set<string>();
 
 	let requestCount = 0;
 	let receivedCount = 0;
@@ -100,6 +108,8 @@ export default async function run({
 			requestCount,
 			receivedCount,
 			totalPlaying,
+			rccChannelNames,
+			statusMessages,
 		});
 	}, 10_000);
 
@@ -128,115 +138,120 @@ export default async function run({
 					},
 					robloxCookies[usedRobloxCookieIndex],
 					privateAccessCookie,
-				).then((data) => {
+				).then(async (data) => {
 					receivedCount++;
 
-					if (data) {
-						const rccChannelName = data.rcc.channelName;
-						if (
-							rccChannelName !== "LIVE" &&
-							!discoveredRCCChannelNames.has(rccChannelName)
-						) {
-							discoveredRCCChannelNames.add(rccChannelName);
-							console.log(
-								`${experience.name} (${experience.universeId})`,
-								requestCount,
-								receivedCount,
-								server.id,
-								data.rcc.version,
-								rccChannelName,
-							);
+					if (!data) return;
+
+					if (data?.data) {
+						if (rccChannelNames) {
+							const channelName = data.data?.rcc.channelName;
+							if (
+								channelName &&
+								channelName !== "LIVE" &&
+								!rccChannelNames.includes(channelName)
+							) {
+								rccChannelNames.push(channelName);
+							}
 						}
 
-						if (!checkedIPsThisSession.has(data.connection.address)) {
-							checkedIPsThisSession.add(data.connection.address);
+						const dataCenter = dataCenters.find(
+							(dataCenter) =>
+								dataCenter.dataCenterId === data.data?.datacenter.id,
+						);
 
-							getIpInfo(
-								{
-									ip: data.connection.address,
-								},
-								ipInfoAccessToken,
-							).then((ipInfo) => {
-								if ("bogon" in ipInfo) {
-									return;
+						const internalIPPrefix = data.data.internalConnection?.address
+							.split(".")
+							.slice(0, 2)
+							.concat("")
+							.join(".");
+						const ipAddress = data.data.connection.address;
+						if (dataCenter) {
+							if (!dataCenter.ips.includes(ipAddress)) {
+								dataCenter.ips.push(ipAddress);
+							}
+							if (
+								internalIPPrefix &&
+								!dataCenter.internalIps.includes(internalIPPrefix)
+							) {
+								dataCenter.internalIps.push(internalIPPrefix);
+							}
+
+							let hasCheckedThisSession = false;
+							for (const ip of dataCenter.ips) {
+								if (checkedIPsThisSession.has(ip)) {
+									hasCheckedThisSession = true;
+									break;
 								}
+							}
+
+							if (!hasCheckedThisSession) {
+								const ipInfo = await getIpInfo(
+									{
+										ip: ipAddress,
+									},
+									ipInfoAccessToken,
+								);
+
+								if ("bogon" in ipInfo) return;
 
 								const latLong = ipInfo.loc.split(",") as [string, string];
-								/*if (!data.connection.address.startsWith("128.116.")) {
-									console.log(server.id, experience.rootPlaceId);
-								}*/
 
-								// remove last number of ip
-								const internalIPPrefix = data.internalConnection?.address
-									.split(".")
-									.slice(0, 2)
-									.concat("")
-									.join(".");
-								for (const item of dataCenters) {
-									const includesDataCenterId =
-										item.dataCenterId === data.datacenter.id;
-									const includesIP = item.ips.includes(data.connection.address);
-									const includesInternalIPPrefix = internalIPPrefix
-										? item.internalIps.includes(internalIPPrefix)
-										: undefined;
-
-									if (includesDataCenterId) {
-										if (!includesIP) item.ips.push(data.connection.address);
-										if (!includesInternalIPPrefix && internalIPPrefix)
-											item.internalIps.push(internalIPPrefix);
-
-										let otherIPChecked = false;
-
-										for (const otherIP of item.ips) {
-											if (
-												otherIP !== data.connection.address &&
-												!checkedIPsThisSession.has(otherIP)
-											) {
-												otherIPChecked = true;
-												break;
-											}
-										}
-
-										if (
-											item.location.country !== ipInfo.country ||
-											item.location.region !== ipInfo.region ||
-											item.location.city !== ipInfo.city ||
-											item.location.latLong[0] !== latLong[0] ||
-											item.location.latLong[1] !== latLong[1]
-										) {
-											console.log(
-												"Data center id",
-												item.dataCenterId,
-												"changed location",
-												otherIPChecked,
-											);
-
-											item.location = {
-												city: ipInfo.city,
-												region: ipInfo.region,
-												country: ipInfo.country,
-												latLong,
-											};
-										}
-
-										return;
-									}
-								}
-
-								// no data center found
-								dataCenters.push({
-									dataCenterId: data.datacenter.id,
-									location: {
+								if (
+									dataCenter.location.country !== ipInfo.country ||
+									dataCenter.location.region !== ipInfo.region ||
+									dataCenter.location.city !== ipInfo.city ||
+									dataCenter.location.latLong[0] !== latLong[0] ||
+									dataCenter.location.latLong[1] !== latLong[1]
+								) {
+									dataCenter.location = {
 										city: ipInfo.city,
 										region: ipInfo.region,
 										country: ipInfo.country,
 										latLong,
-									},
-									ips: [data.connection.address],
-									internalIps: internalIPPrefix ? [internalIPPrefix] : [],
-								});
+									};
+								}
+							}
+						} else {
+							// no data center found
+							const ipInfo = await getIpInfo(
+								{
+									ip: ipAddress,
+								},
+								ipInfoAccessToken,
+							);
+
+							if ("bogon" in ipInfo) return;
+
+							const latLong = ipInfo.loc.split(",") as [string, string];
+
+							// no data center found
+							dataCenters.push({
+								dataCenterId: data.data.datacenter.id,
+								location: {
+									city: ipInfo.city,
+									region: ipInfo.region,
+									country: ipInfo.country,
+									latLong,
+								},
+								ips: [data.data.connection.address],
+								internalIps: internalIPPrefix ? [internalIPPrefix] : [],
 							});
 						}
+					} else if (statusMessages) {
+						for (const item of statusMessages) {
+							if (
+								item.status === data.status &&
+								item.statusCode === data.statusCode
+							) {
+								return;
+							}
+						}
+
+						statusMessages.push({
+							statusCode: data.statusCode,
+							status: data.status,
+						});
 					}
 				});
 			}
@@ -281,20 +296,44 @@ if (import.meta.main) {
 		);
 	}
 
-	const dataCenters = await Bun.file("./data/datacenters.json").json();
+	const dataCenters = await Bun.file("./data/datacenters.json")
+		.json()
+		.catch((err) => {
+			if (err.code === "ENOENT") return [];
+
+			throw err;
+		});
+	const statusMessages = await Bun.file("./data/status_messages.json")
+		.json()
+		.catch((err) => {
+			if (err.code === "ENOENT") return [];
+
+			throw err;
+		});
+	const rccChannelNames = await Bun.file("./data/channel_names.json")
+		.json()
+		.catch((err) => {
+			if (err.code === "ENOENT") return [];
+
+			throw err;
+		});
 
 	while (true) {
-		console.log("Running again...");
+		console.info("Running again...");
 		await run({
 			robloxCookies,
 			privateAccessCookie,
 			ipInfoAccessToken,
 			dataCenters,
+			statusMessages,
+			rccChannelNames,
 			interval: async ({
 				dataCenters,
 				requestCount,
 				receivedCount,
 				totalPlaying,
+				rccChannelNames,
+				statusMessages,
 			}) => {
 				console.log(
 					"Requested:",
@@ -305,6 +344,8 @@ if (import.meta.main) {
 					totalPlaying,
 					"Memory usage:",
 					`${(process.memoryUsage().rss / 1024 / 1024).toFixed(1)} MB`,
+					rccChannelNames,
+					statusMessages,
 				);
 
 				const dataCentersGroupData: DataCenterGroupData[] = [];
@@ -342,14 +383,26 @@ if (import.meta.main) {
 					(a, b) => a.dataCenterIds[0] - b.dataCenterIds[0],
 				);
 
-				await Bun.write(
-					"data/datacenters.json",
-					JSON.stringify(dataCenters, null, 4),
-				);
-				await Bun.write(
-					"data/grouped_datacenters.json",
-					JSON.stringify(dataCentersGroupData, null, 4),
-				);
+				await Promise.all([
+					Bun.write(
+						"data/datacenters.json",
+						JSON.stringify(dataCenters, null, 4),
+					),
+					Bun.write(
+						"data/grouped_datacenters.json",
+						JSON.stringify(dataCentersGroupData, null, 4),
+					),
+					statusMessages &&
+						Bun.write(
+							"data/status_messages.json",
+							JSON.stringify(statusMessages, null, 4),
+						),
+					rccChannelNames &&
+						Bun.write(
+							"data/channel_names.json",
+							JSON.stringify(rccChannelNames, null, 4),
+						),
+				]);
 
 				await Bun.$`git add data/grouped_datacenters.json && git commit --message ${Date.now()} && git push`.catch(
 					() => {},

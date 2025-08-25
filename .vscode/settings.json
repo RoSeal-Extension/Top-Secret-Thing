@@ -4,5 +4,5 @@
 		"source.organizeImports": "explicit",
 		"source.fixAll": "explicit"
 	},
-	"editor.defaultFormatter": "biomejs.biome",
+	"editor.defaultFormatter": "biomejs.biome"
 }

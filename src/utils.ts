@@ -86,22 +86,28 @@ type GetGameServerJoinDataRequest = {
 	gameId: string;
 };
 
-export type ParsedGameServerJoinData = {
-	connection: {
-		address: string;
-		port: number;
-		isUdmuxProtected: boolean;
-	};
-	internalConnection?: {
-		address: string;
-		port: number;
-	};
-	datacenter: {
-		id: number;
-	};
-	rcc: {
-		version: string;
-		channelName: string;
+export type MinimalServerJoinData = {
+	success: boolean;
+	statusCode: number;
+	status?: string;
+	queuePosition?: number;
+	data?: {
+		connection: {
+			address: string;
+			port: number;
+			isUdmuxProtected: boolean;
+		};
+		internalConnection?: {
+			address: string;
+			port: number;
+		};
+		datacenter: {
+			id: number;
+		};
+		rcc: {
+			version: string;
+			channelName: string;
+		};
 	};
 };
 
@@ -109,7 +115,9 @@ export async function getGameServerJoinData(
 	request: GetGameServerJoinDataRequest,
 	cookie: string,
 	privateAccessCookie?: string,
-): Promise<ParsedGameServerJoinData | null> {
+): Promise<MinimalServerJoinData | null> {
+	let isPrivateRetry = false;
+
 	while (true) {
 		try {
 			const res = await fetch(
@@ -118,7 +126,10 @@ export async function getGameServerJoinData(
 					method: "POST",
 					headers: {
 						"content-type": "application/json",
-						cookie: cookie,
+						cookie:
+							isPrivateRetry && privateAccessCookie
+								? privateAccessCookie
+								: cookie,
 						"user-agent": ROBLOX_USER_AGENT,
 					},
 					body: JSON.stringify(request),
@@ -131,63 +142,47 @@ export async function getGameServerJoinData(
 			}
 
 			const data = (await res.json()) as InternalServerJoinData;
-			const { joinScript, status } = data;
+			const { joinScript, status, message, queuePosition } = data;
 
-			if (status !== 2 && status !== 22) {
-				console.log(data.status, data.message, request.gameId, request.placeId);
-			}
-
-			if (status === 16) {
-				console.log("???");
+			if (status === 19 && privateAccessCookie) {
+				isPrivateRetry = true;
 				continue;
 			}
 
-			if (status === 19 && privateAccessCookie) {
-				return getGameServerJoinData(request, privateAccessCookie);
-			}
-
 			if (!joinScript) {
-				return null;
+				return {
+					success: false,
+					statusCode: status,
+					status: message,
+					queuePosition,
+				};
 			}
-
-			if (joinScript.GameId !== request.gameId) {
-				console.log("gameId mismatch", request.gameId, joinScript.GameId);
-			}
-
-			/*const sessionData = JSON.parse(joinScript.SessionId);
-			if (sessionData) {
-				//console.log(sessionData);
-			}
-			/*
-			if (joinScriptUrl) {
-				const url = new URL(joinScriptUrl);
-				const ticket = url.searchParams.get("ticket");
-
-				if (ticket) {
-					const ticketData = JSON.parse(ticket);
-					console.log(ticketData);
-				}
-			}*/
 
 			const connection =
 				joinScript.UdmuxEndpoints?.[0] ?? joinScript.ServerConnections?.[0];
 			const internalConnection = joinScript.ServerConnections?.[0];
 			return {
-				connection: {
-					address: connection.Address,
-					port: connection.Port,
-					isUdmuxProtected: !!joinScript.UdmuxEndpoints?.length,
-				},
-				internalConnection: internalConnection && {
-					address: internalConnection.Address,
-					port: internalConnection.Port,
-				},
-				datacenter: {
-					id: joinScript.DataCenterId,
-				},
-				rcc: {
-					version: joinScript.RccVersion,
-					channelName: joinScript.ChannelName || "LIVE",
+				success: true,
+				statusCode: status,
+				status: message,
+				queuePosition,
+				data: {
+					connection: {
+						address: connection.Address,
+						port: connection.Port,
+						isUdmuxProtected: !!joinScript.UdmuxEndpoints?.length,
+					},
+					internalConnection: internalConnection && {
+						address: internalConnection.Address,
+						port: internalConnection.Port,
+					},
+					datacenter: {
+						id: joinScript.DataCenterId,
+					},
+					rcc: {
+						version: joinScript.RccVersion,
+						channelName: joinScript.ChannelName || "LIVE",
+					},
 				},
 			};
 		} catch {}
