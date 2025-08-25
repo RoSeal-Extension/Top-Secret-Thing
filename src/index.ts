@@ -144,7 +144,7 @@ export default async function run({
 					if (!data) return;
 
 					if (data?.data) {
-						if (rccChannelNames) {
+						if (rccChannelNames && !data.data.rcc.isPrivateChannel) {
 							const channelName = data.data?.rcc.channelName;
 							if (
 								channelName &&

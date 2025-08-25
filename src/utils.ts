@@ -106,6 +106,7 @@ export type MinimalServerJoinData = {
 		};
 		rcc: {
 			version: string;
+			isPrivateChannel: boolean;
 			channelName: string;
 		};
 	};
@@ -181,6 +182,7 @@ export async function getGameServerJoinData(
 					},
 					rcc: {
 						version: joinScript.RccVersion,
+						isPrivateChannel: isPrivateRetry,
 						channelName: joinScript.ChannelName || "LIVE",
 					},
 				},
