@@ -26,5 +26,9 @@
     {
         "statusCode": 12,
         "status": "Can't join private instance through specific joins"
+    },
+    {
+        "statusCode": 12,
+        "status": "To join this experience, update your content maturity setting."
     }
 ]
