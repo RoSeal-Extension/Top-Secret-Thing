@@ -2,5 +2,9 @@
     {
         "statusCode": 22,
         "status": null
+    },
+    {
+        "statusCode": 12,
+        "status": "You need to purchase access to this game before you can play."
     }
 ]
