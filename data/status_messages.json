@@ -18,5 +18,9 @@
     {
         "statusCode": 0,
         "status": "Backend Exception"
+    },
+    {
+        "statusCode": 5,
+        "status": null
     }
 ]
