@@ -10,5 +10,6 @@
     "ztelemetrydatarearch-100p-variant",
     "ztelemetrydatarearch-0p-control",
     "zliveforbeta",
-    "zbeta"
+    "zbeta",
+    "zcrashuploadrolloutoverride"
 ]
