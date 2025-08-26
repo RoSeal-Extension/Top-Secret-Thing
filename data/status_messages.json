@@ -34,5 +34,9 @@
     {
         "statusCode": 12,
         "status": "You are not allowed to play this game. (Group Only)"
+    },
+    {
+        "statusCode": 12,
+        "status": null
     }
 ]
