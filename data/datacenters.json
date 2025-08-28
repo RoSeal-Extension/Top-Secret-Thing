@@ -83413,12 +83413,12 @@
     {
         "dataCenterId": 25774,
         "location": {
-            "city": "San Mateo",
-            "region": "California",
-            "country": "US",
+            "city": "São Paulo",
+            "region": "São Paulo",
+            "country": "BR",
             "latLong": [
-                "37.5395",
-                "-122.2998"
+                "-23.5505",
+                "-46.6333"
             ]
         },
         "ips": [
