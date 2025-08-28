@@ -14,5 +14,7 @@
     "zcrashuploadrolloutoverride",
     "zcrashuploadrolloutoverridecontrol",
     "zrobloxtelemetrypreventemptystring",
-    "zrobloxtelemetrypreventemptystringcontrol"
+    "zrobloxtelemetrypreventemptystringcontrol",
+    "zluauparserstackacontrol",
+    "zdeadflagcleanupcontrol"
 ]
