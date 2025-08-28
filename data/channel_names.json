@@ -18,5 +18,6 @@
     "zluauparserstackacontrol",
     "zdeadflagcleanupcontrol",
     "zdeadflagcleanup",
-    "zluauparserstacka"
+    "zluauparserstacka",
+    "zspatialqueriesluastack2control"
 ]
