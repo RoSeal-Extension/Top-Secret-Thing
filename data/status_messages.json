@@ -38,5 +38,9 @@
     {
         "statusCode": 12,
         "status": null
+    },
+    {
+        "statusCode": 0,
+        "status": "Unknown error."
     }
 ]
