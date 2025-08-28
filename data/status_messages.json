@@ -42,5 +42,9 @@
     {
         "statusCode": 0,
         "status": "Unknown error."
+    },
+    {
+        "statusCode": 16,
+        "status": null
     }
 ]
