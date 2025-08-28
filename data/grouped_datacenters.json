@@ -365,8 +365,7 @@
             25787,
             25788,
             25789,
-            25790,
-            25796
+            25790
         ],
         "location": {
             "city": "San Jose",
@@ -394,6 +393,20 @@
             "latLong": [
                 "53.3331",
                 "-6.2489"
+            ]
+        }
+    },
+    {
+        "dataCenterIds": [
+            25796
+        ],
+        "location": {
+            "city": "São Paulo",
+            "region": "São Paulo",
+            "country": "BR",
+            "latLong": [
+                "-23.5505",
+                "-46.6333"
             ]
         }
     }
