@@ -83427,23 +83427,5 @@
         "internalIps": [
             "10.33."
         ]
-    },
-    {
-        "dataCenterId": 25774,
-        "location": {
-            "city": "San Mateo",
-            "region": "California",
-            "country": "US",
-            "latLong": [
-                "37.5395",
-                "-122.2998"
-            ]
-        },
-        "ips": [
-            "128.116.86.33"
-        ],
-        "internalIps": [
-            "10.33."
-        ]
     }
 ]
