@@ -360,7 +360,6 @@
     {
         "dataCenterIds": [
             25774,
-            25774,
             25785,
             25787,
             25788,
@@ -374,6 +373,21 @@
             "latLong": [
                 "37.3394",
                 "-121.8950"
+            ]
+        }
+    },
+    {
+        "dataCenterIds": [
+            25774,
+            25796
+        ],
+        "location": {
+            "city": "São Paulo",
+            "region": "São Paulo",
+            "country": "BR",
+            "latLong": [
+                "-23.5505",
+                "-46.6333"
             ]
         }
     },
@@ -393,20 +407,6 @@
             "latLong": [
                 "53.3331",
                 "-6.2489"
-            ]
-        }
-    },
-    {
-        "dataCenterIds": [
-            25796
-        ],
-        "location": {
-            "city": "São Paulo",
-            "region": "São Paulo",
-            "country": "BR",
-            "latLong": [
-                "-23.5505",
-                "-46.6333"
             ]
         }
     }
