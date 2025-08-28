@@ -197,27 +197,32 @@ type GetIpInfoRequest = {
 
 export type GetIpInfoResponse =
 	| {
-			ip: string;
-			hostname?: string;
 			city: string;
 			region: string;
 			country: string;
 			loc: string;
-			org: string;
-			postal: string;
-			timezone: string;
-			readme?: string;
-			anycast?: boolean;
 	  }
 	| {
 			ip: string;
 			bogon: boolean;
 	  };
 
+const cachedIpInfoData: Record<string, GetIpInfoResponse> = {
+	"128.116.86.33": {
+		city: "São Paulo",
+		region: "São Paulo",
+		country: "BR",
+		loc: "-23.5505,-46.6333",
+	},
+};
+
 export function getIpInfo(
 	{ ip }: GetIpInfoRequest,
 	accessToken: string,
 ): Promise<GetIpInfoResponse> {
+	if (cachedIpInfoData[ip]) {
+		return Promise.resolve(cachedIpInfoData[ip]);
+	}
 	return fetch(`https://ipinfo.io/${ip}/json`, {
 		headers: {
 			authorization: `Bearer ${accessToken}`,
