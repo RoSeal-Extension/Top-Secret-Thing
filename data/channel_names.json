@@ -23,5 +23,6 @@
     "zspatialqueriesluastack2",
     "zdmr-perf-physicsvar1control2",
     "zdmr-perf-physicsvar1",
-    "zdisplaysizeapi"
+    "zdisplaysizeapi",
+    "zdisplaysizeapicontrol"
 ]
