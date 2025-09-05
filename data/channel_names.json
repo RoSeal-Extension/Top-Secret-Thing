@@ -30,5 +30,6 @@
     "zinstancetrackingcontrol",
     "zdmr-perf-physicsvar1control3",
     "zrccclang20",
-    "zrccclang20control"
+    "zrccclang20control",
+    "zdmr-perf-physicsvar2"
 ]
