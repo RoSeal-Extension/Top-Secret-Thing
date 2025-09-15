@@ -50,5 +50,9 @@
     {
         "statusCode": 5,
         "status": "Could not find requested game instance"
+    },
+    {
+        "statusCode": 12,
+        "status": "Game's root place is not active."
     }
 ]
