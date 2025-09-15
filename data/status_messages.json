@@ -54,5 +54,9 @@
     {
         "statusCode": 12,
         "status": "Game's root place is not active."
+    },
+    {
+        "statusCode": 11,
+        "status": "Invalid Game."
     }
 ]
