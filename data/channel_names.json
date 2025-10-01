@@ -76,5 +76,6 @@
     "ztelemetryserviceownlibrary",
     "ztelemetryserviceownlibrarycontrol",
     "zrccpgofetinyholdout",
-    "zrccpgoholdout"
+    "zrccpgoholdout",
+    "zscoped-id-api-usages"
 ]
