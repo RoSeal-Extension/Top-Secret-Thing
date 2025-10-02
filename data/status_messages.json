@@ -62,5 +62,9 @@
     {
         "statusCode": 12,
         "status": "You are not allowed to play this game. (Friends Only)"
+    },
+    {
+        "statusCode": 12,
+        "status": "This experience is not accessible because it is unrated"
     }
 ]
