@@ -66,5 +66,9 @@
     {
         "statusCode": 12,
         "status": "This experience is not accessible because it is unrated"
+    },
+    {
+        "statusCode": 6,
+        "status": null
     }
 ]
