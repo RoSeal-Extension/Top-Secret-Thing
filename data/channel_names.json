@@ -90,5 +90,6 @@
     "zrccmarch-x86-64-v3",
     "zrccffp-contract-fast",
     "zrccdevirtualize",
-    "zrccinlines-hidden"
+    "zrccinlines-hidden",
+    "zrcco3"
 ]
