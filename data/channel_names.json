@@ -86,5 +86,8 @@
     "zdmr-perf-variant4",
     "zdmr-perf-variant5",
     "zrccpgoiruse1host",
-    "zrccpgofeuse690"
+    "zrccpgofeuse690",
+    "zrccmarch-x86-64-v3",
+    "zrccffp-contract-fast",
+    "zrccdevirtualize"
 ]
