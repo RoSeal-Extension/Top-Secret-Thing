@@ -89,5 +89,6 @@
     "zrccpgofeuse690",
     "zrccmarch-x86-64-v3",
     "zrccffp-contract-fast",
-    "zrccdevirtualize"
+    "zrccdevirtualize",
+    "zrccinlines-hidden"
 ]
