@@ -91,5 +91,7 @@
     "zrccffp-contract-fast",
     "zrccdevirtualize",
     "zrccinlines-hidden",
-    "zrcco3"
+    "zrcco3",
+    "zphysicsmanagedjointrefactorcontrol",
+    "zphysicsmanagedjointrefactor"
 ]
