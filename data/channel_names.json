@@ -99,5 +99,6 @@
     "ztelemetry-pre-send-stat-bucketing-control",
     "zopentelemetryaddbuildstringattribute",
     "zopentelemetryaddbuildstringattributecontrol",
-    "zopentelemetryrccspecificservicetracingname"
+    "zopentelemetryrccspecificservicetracingname",
+    "zei2420"
 ]
