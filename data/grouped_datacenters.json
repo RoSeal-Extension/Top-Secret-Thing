@@ -454,5 +454,20 @@
                 "-121.8950"
             ]
         }
+    },
+    {
+        "dataCenterIds": [
+            25839,
+            25843
+        ],
+        "location": {
+            "city": "Osaka",
+            "region": "Osaka",
+            "country": "JP",
+            "latLong": [
+                "34.6938",
+                "135.5011"
+            ]
+        }
     }
 ]
