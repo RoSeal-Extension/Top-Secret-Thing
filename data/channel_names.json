@@ -93,5 +93,11 @@
     "zrccinlines-hidden",
     "zrcco3",
     "zphysicsmanagedjointrefactorcontrol",
-    "zphysicsmanagedjointrefactor"
+    "zphysicsmanagedjointrefactor",
+    "ztelemetry-pre-send-stat-bucketing",
+    "zopentelemetryrccspecificservicetracingnamecontrol",
+    "ztelemetry-pre-send-stat-bucketing-control",
+    "zopentelemetryaddbuildstringattribute",
+    "zopentelemetryaddbuildstringattributecontrol",
+    "zopentelemetryrccspecificservicetracingname"
 ]
