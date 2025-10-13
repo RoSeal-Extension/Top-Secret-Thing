@@ -214,6 +214,12 @@ const cachedIpInfoData: Record<string, GetIpInfoResponse> = {
 		country: "BR",
 		loc: "-23.5505,-46.6333",
 	},
+	"128.116.46.33": {
+		city: "Singapore",
+		region: "Singapore",
+		country: "SP",
+		loc: "1.2897, 103.8501",
+	},
 };
 
 export function getIpInfo(
