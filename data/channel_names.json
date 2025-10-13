@@ -107,5 +107,7 @@
     "zrccinstrsetcombo",
     "zrccpgoiruse01p",
     "zrccperfbuildoptall",
-    "zobjectmrdcontrol"
+    "zobjectmrdcontrol",
+    "ztestrccpolling",
+    "zrccpgocsirgen"
 ]
