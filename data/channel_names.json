@@ -109,5 +109,6 @@
     "zrccperfbuildoptall",
     "zobjectmrdcontrol",
     "ztestrccpolling",
-    "zrccpgocsirgen"
+    "zrccpgocsirgen",
+    "zremovenoorderinfocontrol"
 ]
