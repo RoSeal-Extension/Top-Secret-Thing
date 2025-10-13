@@ -112,5 +112,6 @@
     "zrccpgocsirgen",
     "zremovenoorderinfocontrol",
     "zobjectmrd",
-    "zremovenoorderinfo"
+    "zremovenoorderinfo",
+    "ztestrccpollingcontrol"
 ]
