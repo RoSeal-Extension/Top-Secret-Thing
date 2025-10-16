@@ -114,5 +114,8 @@
     "zobjectmrd",
     "zremovenoorderinfo",
     "ztestrccpollingcontrol",
-    "zrccpgocsiruse"
+    "zrccpgocsiruse",
+    "zinvestigate-cpu-increase",
+    "zrccfutextest",
+    "zinvestigate-cpu-increasecontrol"
 ]
