@@ -117,5 +117,6 @@
     "zrccpgocsiruse",
     "zinvestigate-cpu-increase",
     "zrccfutextest",
-    "zinvestigate-cpu-increasecontrol"
+    "zinvestigate-cpu-increasecontrol",
+    "zrccfutextestcontrol"
 ]
