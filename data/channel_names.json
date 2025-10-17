@@ -123,5 +123,6 @@
     "zluigiburgerflagtest",
     "zrcccrashmetadatarefactorpubliccontrol",
     "zrcccrashmetadatarefactorpublic",
-    "zinvestigate-cpu-increase-rollbackheartbeat"
+    "zinvestigate-cpu-increase-rollbackheartbeat",
+    "zinvestigate-cpu-increase-rollbackheartbeatcontrol"
 ]
