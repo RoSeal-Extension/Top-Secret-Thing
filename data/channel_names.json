@@ -126,5 +126,6 @@
     "zinvestigate-cpu-increase-rollbackheartbeat",
     "zinvestigate-cpu-increase-rollbackheartbeatcontrol",
     "zrccpgoiruse693",
-    "zinvestigate-cpu-increasecontrol2"
+    "zinvestigate-cpu-increasecontrol2",
+    "zpartitionedarrayrefactor"
 ]
