@@ -120,5 +120,8 @@
     "zinvestigate-cpu-increasecontrol",
     "zrccfutextestcontrol",
     "zrccpgoirgen",
-    "zluigiburgerflagtest"
+    "zluigiburgerflagtest",
+    "zrcccrashmetadatarefactorpubliccontrol",
+    "zrcccrashmetadatarefactorpublic",
+    "zinvestigate-cpu-increase-rollbackheartbeat"
 ]
