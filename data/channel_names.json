@@ -124,5 +124,6 @@
     "zrcccrashmetadatarefactorpubliccontrol",
     "zrcccrashmetadatarefactorpublic",
     "zinvestigate-cpu-increase-rollbackheartbeat",
-    "zinvestigate-cpu-increase-rollbackheartbeatcontrol"
+    "zinvestigate-cpu-increase-rollbackheartbeatcontrol",
+    "zrccpgoiruse693"
 ]
