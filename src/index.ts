@@ -399,7 +399,7 @@ if (import.meta.main) {
 						locationMatch.dataCenterIds.push(dataCenter.dataCenterId);
 					} else {
 						dataCentersGroupData.push({
-							id: oldMatch?.id || highestId++,
+							id: oldMatch?.id || ++highestId,
 							dataCenterIds: [dataCenter.dataCenterId],
 							robloxIps: dataCenter.ips.filter((ip) =>
 								ip.startsWith(ROBLOX_IP_ADDRESS_PREFIX),
