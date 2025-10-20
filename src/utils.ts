@@ -218,7 +218,7 @@ const cachedIpInfoData: Record<string, GetIpInfoResponse> = {
 		city: "Singapore",
 		region: "Singapore",
 		country: "SP",
-		loc: "1.2897, 103.8501",
+		loc: "1.2897,103.8501",
 	},
 };
 
