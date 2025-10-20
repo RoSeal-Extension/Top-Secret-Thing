@@ -22,3 +22,5 @@ export const CITY_TO_NEW_LOCATION: Record<string, DataCenterLocation> = {
 		latLong: ["50.1155", "8.6842"],
 	},
 };
+
+export const ROBLOX_IP_ADDRESS_PREFIX = "128.116.";

@@ -2,6 +2,7 @@ import {
 	CITY_TO_NEW_LOCATION,
 	IPINFO_ACCESS_TOKEN_ENV_KEY,
 	PRIVATE_ACCESS_COOKIE_ENV_KEY,
+	ROBLOX_IP_ADDRESS_PREFIX,
 	ROBLOX_SECURITY_TOKENS_ENV_PREFIX,
 } from "./constants";
 import {
@@ -28,7 +29,9 @@ export type DataCenterData = {
 };
 
 export type DataCenterGroupData = {
+	id: number;
 	dataCenterIds: number[];
+	robloxIps: string[];
 	location: DataCenterLocation;
 };
 
@@ -351,8 +354,34 @@ if (import.meta.main) {
 					statusMessages,
 				);
 
+				const existingGroups = (await Bun.file("data/grouped_datacenters.json")
+					.json()
+					.catch(() => {})) as DataCenterGroupData[] | undefined;
+
+				let highestId =
+					existingGroups?.reduce((a, b) => {
+						if (b.id && b.id > a) {
+							return b.id;
+						}
+
+						return a;
+					}, 0) ?? 0;
+
 				const dataCentersGroupData: DataCenterGroupData[] = [];
 				for (const dataCenter of dataCenters) {
+					const oldMatch = existingGroups?.find((dataCenter2) => {
+						const diffLat = Math.abs(
+							Number.parseFloat(dataCenter2.location.latLong[0]) -
+								Number.parseFloat(dataCenter.location.latLong[0]),
+						);
+						const diffLong = Math.abs(
+							Number.parseFloat(dataCenter2.location.latLong[1]) -
+								Number.parseFloat(dataCenter.location.latLong[1]),
+						);
+
+						return diffLat < 2 && diffLong < 2;
+					});
+
 					const locationMatch = dataCentersGroupData.find((dataCenter2) => {
 						const diffLat = Math.abs(
 							Number.parseFloat(dataCenter2.location.latLong[0]) -
@@ -370,7 +399,11 @@ if (import.meta.main) {
 						locationMatch.dataCenterIds.push(dataCenter.dataCenterId);
 					} else {
 						dataCentersGroupData.push({
+							id: oldMatch?.id || highestId++,
 							dataCenterIds: [dataCenter.dataCenterId],
+							robloxIps: dataCenter.ips.filter((ip) =>
+								ip.startsWith(ROBLOX_IP_ADDRESS_PREFIX),
+							),
 							location:
 								CITY_TO_NEW_LOCATION[dataCenter.location.city] ||
 								dataCenter.location,
@@ -380,6 +413,7 @@ if (import.meta.main) {
 
 				for (const item of dataCentersGroupData) {
 					item.dataCenterIds.sort((a, b) => a - b);
+					item.robloxIps.sort();
 				}
 
 				dataCentersGroupData.sort(
