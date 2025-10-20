@@ -420,6 +420,7 @@ if (import.meta.main) {
 					(a, b) => a.dataCenterIds[0] - b.dataCenterIds[0],
 				);
 
+				console.log(":3");
 				await Promise.all([
 					Bun.write(
 						"data/datacenters.json",
