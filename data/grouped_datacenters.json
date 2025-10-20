@@ -1,5 +1,6 @@
 [
     {
+        "id": 1,
         "dataCenterIds": [
             295,
             372,
@@ -20,9 +21,10 @@
             25527,
             25528,
             25529,
-            25531,
-            25532,
             25817
+        ],
+        "robloxIps": [
+            "128.116.97.33"
         ],
         "location": {
             "city": "Singapore",
@@ -35,6 +37,7 @@
         }
     },
     {
+        "id": 2,
         "dataCenterIds": [
             299,
             363,
@@ -90,6 +93,9 @@
             25515,
             25516
         ],
+        "robloxIps": [
+            "128.116.53.33"
+        ],
         "location": {
             "city": "Ashburn",
             "region": "Virginia",
@@ -101,9 +107,13 @@
         }
     },
     {
+        "id": 3,
         "dataCenterIds": [
             302,
             449
+        ],
+        "robloxIps": [
+            "128.116.33.33"
         ],
         "location": {
             "city": "London",
@@ -116,12 +126,16 @@
         }
     },
     {
+        "id": 4,
         "dataCenterIds": [
             306,
             335,
             463,
             464,
             468
+        ],
+        "robloxIps": [
+            "128.116.48.33"
         ],
         "location": {
             "city": "Chicago",
@@ -134,12 +148,16 @@
         }
     },
     {
+        "id": 5,
         "dataCenterIds": [
             332,
             374,
             432,
             433,
             434
+        ],
+        "robloxIps": [
+            "128.116.127.33"
         ],
         "location": {
             "city": "Miami",
@@ -152,6 +170,7 @@
         }
     },
     {
+        "id": 6,
         "dataCenterIds": [
             337,
             377,
@@ -166,6 +185,9 @@
             25545,
             25546
         ],
+        "robloxIps": [
+            "128.116.55.33"
+        ],
         "location": {
             "city": "Tokyo",
             "region": "Tokyo",
@@ -177,6 +199,7 @@
         }
     },
     {
+        "id": 7,
         "dataCenterIds": [
             352,
             378,
@@ -189,8 +212,21 @@
             25496,
             25497,
             25538,
+            25853,
+            25853,
+            25853,
+            25853,
+            25853,
+            25853,
+            25853,
+            25853,
+            25853,
+            25853,
+            25853,
+            25853,
             25853
         ],
+        "robloxIps": [],
         "location": {
             "city": "Frankfurt",
             "region": "Hesse",
@@ -202,6 +238,7 @@
         }
     },
     {
+        "id": 8,
         "dataCenterIds": [
             359,
             518,
@@ -217,6 +254,9 @@
             25813,
             25813
         ],
+        "robloxIps": [
+            "128.116.104.33"
+        ],
         "location": {
             "city": "Mumbai",
             "region": "Maharashtra",
@@ -228,6 +268,7 @@
         }
     },
     {
+        "id": 9,
         "dataCenterIds": [
             365,
             370,
@@ -245,6 +286,9 @@
             447,
             490
         ],
+        "robloxIps": [
+            "128.116.1.33"
+        ],
         "location": {
             "city": "Los Angeles",
             "region": "California",
@@ -256,6 +300,7 @@
         }
     },
     {
+        "id": 10,
         "dataCenterIds": [
             369,
             450,
@@ -263,6 +308,9 @@
             25798,
             25804,
             25804
+        ],
+        "robloxIps": [
+            "128.116.51.33"
         ],
         "location": {
             "city": "Sydney",
@@ -275,8 +323,12 @@
         }
     },
     {
+        "id": 11,
         "dataCenterIds": [
             375
+        ],
+        "robloxIps": [
+            "128.116.95.33"
         ],
         "location": {
             "city": "Dallas",
@@ -289,8 +341,12 @@
         }
     },
     {
+        "id": 12,
         "dataCenterIds": [
             387
+        ],
+        "robloxIps": [
+            "128.116.32.33"
         ],
         "location": {
             "city": "New York City",
@@ -303,9 +359,13 @@
         }
     },
     {
+        "id": 13,
         "dataCenterIds": [
             388,
             524
+        ],
+        "robloxIps": [
+            "128.116.21.33"
         ],
         "location": {
             "city": "Amsterdam",
@@ -318,12 +378,16 @@
         }
     },
     {
+        "id": 14,
         "dataCenterIds": [
             431,
             460,
             487,
             529,
             25808
+        ],
+        "robloxIps": [
+            "128.116.115.33"
         ],
         "location": {
             "city": "Seattle",
@@ -336,9 +400,13 @@
         }
     },
     {
+        "id": 15,
         "dataCenterIds": [
             437,
             448
+        ],
+        "robloxIps": [
+            "128.116.13.33"
         ],
         "location": {
             "city": "Paris",
@@ -351,6 +419,7 @@
         }
     },
     {
+        "id": 16,
         "dataCenterIds": [
             493,
             494,
@@ -365,6 +434,7 @@
             25805,
             25806
         ],
+        "robloxIps": [],
         "location": {
             "city": "Boardman",
             "region": "Oregon",
@@ -376,6 +446,7 @@
         }
     },
     {
+        "id": 17,
         "dataCenterIds": [
             498,
             499,
@@ -388,6 +459,7 @@
             25520,
             25521
         ],
+        "robloxIps": [],
         "location": {
             "city": "Columbus",
             "region": "Ohio",
@@ -399,12 +471,16 @@
         }
     },
     {
+        "id": 20,
         "dataCenterIds": [
             25774,
             25796,
             25799,
             25809,
             25810
+        ],
+        "robloxIps": [
+            "128.116.86.33"
         ],
         "location": {
             "city": "São Paulo",
@@ -417,6 +493,7 @@
         }
     },
     {
+        "id": 19,
         "dataCenterIds": [
             25775,
             25776,
@@ -428,6 +505,7 @@
             25783,
             25784
         ],
+        "robloxIps": [],
         "location": {
             "city": "Dublin",
             "region": "Leinster",
@@ -439,6 +517,7 @@
         }
     },
     {
+        "id": 18,
         "dataCenterIds": [
             25785,
             25787,
@@ -454,6 +533,7 @@
             25822,
             25823
         ],
+        "robloxIps": [],
         "location": {
             "city": "San Jose",
             "region": "California",
@@ -465,6 +545,7 @@
         }
     },
     {
+        "id": 21,
         "dataCenterIds": [
             25825,
             25826,
@@ -488,6 +569,7 @@
             25846,
             25850
         ],
+        "robloxIps": [],
         "location": {
             "city": "Osaka",
             "region": "Osaka",
