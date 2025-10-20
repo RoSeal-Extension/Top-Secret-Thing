@@ -398,6 +398,15 @@ if (import.meta.main) {
 					if (locationMatch) {
 						if (!locationMatch.dataCenterIds.includes(dataCenter.dataCenterId))
 							locationMatch.dataCenterIds.push(dataCenter.dataCenterId);
+
+						for (const ip of dataCenter.ips) {
+							if (
+								ip.startsWith(ROBLOX_IP_ADDRESS_PREFIX) &&
+								!locationMatch.robloxIps.includes(ip)
+							) {
+								locationMatch.robloxIps.push(ip);
+							}
+						}
 					} else {
 						dataCentersGroupData.push({
 							id: oldMatch?.id || ++highestId,
