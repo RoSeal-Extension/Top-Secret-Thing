@@ -31,7 +31,7 @@ export type DataCenterData = {
 export type DataCenterGroupData = {
 	id: number;
 	dataCenterIds: number[];
-	robloxIps: string[];
+	robloxIps?: string[];
 	location: DataCenterLocation;
 };
 
@@ -402,18 +402,20 @@ if (import.meta.main) {
 						for (const ip of dataCenter.ips) {
 							if (
 								ip.startsWith(ROBLOX_IP_ADDRESS_PREFIX) &&
-								!locationMatch.robloxIps.includes(ip)
+								!locationMatch.robloxIps?.includes(ip)
 							) {
+								locationMatch.robloxIps ??= [];
 								locationMatch.robloxIps.push(ip);
 							}
 						}
 					} else {
+						const robloxIps = dataCenter.ips.filter((ip) =>
+							ip.startsWith(ROBLOX_IP_ADDRESS_PREFIX),
+						);
 						dataCentersGroupData.push({
 							id: oldMatch?.id || ++highestId,
 							dataCenterIds: [dataCenter.dataCenterId],
-							robloxIps: dataCenter.ips.filter((ip) =>
-								ip.startsWith(ROBLOX_IP_ADDRESS_PREFIX),
-							),
+							robloxIps: robloxIps.length >= 1 ? robloxIps : undefined,
 							location:
 								CITY_TO_NEW_LOCATION[dataCenter.location.city] ||
 								dataCenter.location,
@@ -423,7 +425,7 @@ if (import.meta.main) {
 
 				for (const item of dataCentersGroupData) {
 					item.dataCenterIds.sort((a, b) => a - b);
-					item.robloxIps.sort();
+					item.robloxIps?.sort();
 				}
 
 				dataCentersGroupData.sort(
