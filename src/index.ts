@@ -396,7 +396,8 @@ if (import.meta.main) {
 					});
 
 					if (locationMatch) {
-						locationMatch.dataCenterIds.push(dataCenter.dataCenterId);
+						if (!locationMatch.dataCenterIds.includes(dataCenter.dataCenterId))
+							locationMatch.dataCenterIds.push(dataCenter.dataCenterId);
 					} else {
 						dataCentersGroupData.push({
 							id: oldMatch?.id || ++highestId,
@@ -420,7 +421,6 @@ if (import.meta.main) {
 					(a, b) => a.dataCenterIds[0] - b.dataCenterIds[0],
 				);
 
-				console.log(":3");
 				await Promise.all([
 					Bun.write(
 						"data/datacenters.json",
