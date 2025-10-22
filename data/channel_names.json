@@ -130,5 +130,6 @@
     "zpartitionedarrayrefactor",
     "zrcccboltgen",
     "zperfdataoptimization",
-    "zperfdataoptimizationcontrol"
+    "zperfdataoptimizationcontrol",
+    "zstringablecli172851"
 ]
