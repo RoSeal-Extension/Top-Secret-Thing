@@ -129,5 +129,6 @@
     "zinvestigate-cpu-increasecontrol2",
     "zpartitionedarrayrefactor",
     "zrcccboltgen",
-    "zperfdataoptimization"
+    "zperfdataoptimization",
+    "zperfdataoptimizationcontrol"
 ]
