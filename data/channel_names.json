@@ -133,5 +133,10 @@
     "zperfdataoptimizationcontrol",
     "zstringablecli172851",
     "zrccboltgen",
-    "zextend-reservation-test-final-savecontrol"
+    "zextend-reservation-test-final-savecontrol",
+    "zcli175690control",
+    "zcli175690",
+    "znewextend-reservation-test-final-savecontrol",
+    "zextend-reservation-test-final-save",
+    "znewextend-reservation-test-final-save"
 ]
