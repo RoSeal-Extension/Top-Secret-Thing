@@ -139,5 +139,11 @@
     "znewextend-reservation-test-final-savecontrol",
     "zextend-reservation-test-final-save",
     "znewextend-reservation-test-final-save",
-    "zenrollmentmapcleanupcontrol"
+    "zenrollmentmapcleanupcontrol",
+    "ztelemetry-protos-dualwrite",
+    "zrccpgocsiruse2",
+    "zadaptiveusenewvelocitycriteriacontrol",
+    "ztestsleepoptppcimpact",
+    "ztelemetry-protos-dualwrite-control",
+    "zrccboltgen2"
 ]
