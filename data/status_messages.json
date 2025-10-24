@@ -70,5 +70,9 @@
     {
         "statusCode": 6,
         "status": null
+    },
+    {
+        "statusCode": 0,
+        "status": "One of the services required to determine game access is currently unavailable"
     }
 ]
