@@ -146,5 +146,6 @@
     "ztestsleepoptppcimpact",
     "ztelemetry-protos-dualwrite-control",
     "zrccboltgen2",
-    "zadaptiveusenewvelocitycriteria"
+    "zadaptiveusenewvelocitycriteria",
+    "ztestsleepoptppcimpactcontrol"
 ]
