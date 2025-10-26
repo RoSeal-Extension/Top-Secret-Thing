@@ -77,6 +77,13 @@ type InternalServerJoinData = {
 		EventId: string;
 		EphemeralEarlyPubKey: string;
 		PartyId: string;
+		ShowRobloxTranslations?: boolean;
+		MatchmakingAttributes?: string;
+		TranslationDisplayMode?: string;
+		PlaceVersion?: number;
+		NetStackPort?: number;
+		NetStackConfig?: string;
+		NetStackTokenValue?: string;
 	};
 	queuePosition: number;
 };
@@ -162,6 +169,14 @@ export async function getGameServerJoinData(
 			const connection =
 				joinScript.UdmuxEndpoints?.[0] ?? joinScript.ServerConnections?.[0];
 			const internalConnection = joinScript.ServerConnections?.[0];
+
+			if (joinScript.NetStackConfig) {
+				console.log(
+					joinScript.NetStackConfig,
+					joinScript.NetStackPort,
+					joinScript.NetStackTokenValue,
+				);
+			}
 			return {
 				success: true,
 				statusCode: status,
