@@ -350,8 +350,6 @@ if (import.meta.main) {
 					totalPlaying,
 					"Memory usage:",
 					`${(process.memoryUsage().rss / 1024 / 1024).toFixed(1)} MB`,
-					rccChannelNames,
-					statusMessages,
 				);
 
 				const existingGroups = (await Bun.file("data/grouped_datacenters.json")
