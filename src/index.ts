@@ -99,7 +99,7 @@ export default async function run({
 			}
 			cursor = data.nextSortsPageToken;
 		} catch (err) {
-			//console.error("run Error:", err);
+			console.error("run Error:", err);
 		}
 	}
 	shuffleArray(experiences);
