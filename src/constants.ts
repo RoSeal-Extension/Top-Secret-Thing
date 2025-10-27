@@ -5,8 +5,7 @@ export const IPINFO_ACCESS_TOKEN_ENV_KEY = "IPINFO_ACCESS_TOKEN";
 export const PRIVATE_ACCESS_COOKIE_ENV_KEY =
 	"ROBLOX_PRIVATE_ACCESS_SECURITY_TOKEN";
 
-export const ROBLOX_USER_AGENT =
-	"Roblox/WinInet RobloxApp/0 (GlobalDist; RobloxDirectDownload)";
+export const ROBLOX_USER_AGENT = "Roblox/WinInet";
 
 export const CITY_TO_NEW_LOCATION: Record<string, DataCenterLocation> = {
 	Secaucus: {

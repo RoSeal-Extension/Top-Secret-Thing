@@ -251,7 +251,7 @@ export default async function run({
 						}
 					} else if (statusMessages) {
 						if (data.statusCode === 12) {
-							console.log(server.id, experience.rootPlaceId, cookie);
+							console.log(server.id, experience.rootPlaceId, data.status);
 						}
 						for (const item of statusMessages) {
 							if (
