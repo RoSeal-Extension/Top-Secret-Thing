@@ -6,7 +6,7 @@ export const PRIVATE_ACCESS_COOKIE_ENV_KEY =
 	"ROBLOX_PRIVATE_ACCESS_SECURITY_TOKEN";
 
 export const ROBLOX_USER_AGENT =
-	"Roblox/Darwin RobloxApp/0 (GlobalDist; RobloxDirectDownload)";
+	"Roblox/WinInet RobloxApp/0 (GlobalDist; RobloxDirectDownload) RoSealDataCenterDiscovery";
 
 export const CITY_TO_NEW_LOCATION: Record<string, DataCenterLocation> = {
 	Secaucus: {
