@@ -355,12 +355,15 @@ if (import.meta.main) {
 				totalPlaying,
 				rccChannelNames,
 				statusMessages,
+				receivedOKCount,
 			}) => {
 				console.log(
 					"Requested:",
 					requestCount,
 					"Received:",
 					receivedCount,
+					"Total OK Received:",
+					receivedOKCount,
 					"Total players",
 					totalPlaying,
 					"Memory usage:",
