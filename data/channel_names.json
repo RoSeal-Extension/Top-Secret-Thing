@@ -151,5 +151,6 @@
     "znewextend-reservation-test-final-savecontrol2",
     "zbasepartcframeconstrefgetter",
     "zbasepartcframeconstrefgettercontrol",
-    "zvoicercccapabilitymonitor"
+    "zvoicercccapabilitymonitor",
+    "zusereflectableforbasictypes"
 ]
