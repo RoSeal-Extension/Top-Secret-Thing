@@ -111,7 +111,7 @@ export default async function run({
 	let totalPlaying = 0;
 	let receivedOKCount = 0;
 
-	setInterval(() => {
+	const _interval = setInterval(() => {
 		interval?.({
 			dataCenters,
 			requestCount,
@@ -288,6 +288,8 @@ export default async function run({
 			}
 		}
 	}
+
+	clearInterval(_interval);
 }
 
 if (import.meta.main) {
