@@ -148,5 +148,6 @@
     "zrccboltgen2",
     "zadaptiveusenewvelocitycriteria",
     "ztestsleepoptppcimpactcontrol",
-    "znewextend-reservation-test-final-savecontrol2"
+    "znewextend-reservation-test-final-savecontrol2",
+    "zbasepartcframeconstrefgetter"
 ]
