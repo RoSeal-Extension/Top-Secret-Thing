@@ -291,8 +291,8 @@ export async function listPublicServers(
 
 	let requestCount = 0;
 	while (true) {
-		if (requestCount >= 3) {
-			await Bun.sleep(500);
+		if (requestCount >= 20) {
+			await Bun.sleep(1_00);
 		}
 
 		try {
