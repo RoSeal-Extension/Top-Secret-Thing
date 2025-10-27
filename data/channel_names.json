@@ -149,5 +149,6 @@
     "zadaptiveusenewvelocitycriteria",
     "ztestsleepoptppcimpactcontrol",
     "znewextend-reservation-test-final-savecontrol2",
-    "zbasepartcframeconstrefgetter"
+    "zbasepartcframeconstrefgetter",
+    "zbasepartcframeconstrefgettercontrol"
 ]
