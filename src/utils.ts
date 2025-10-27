@@ -147,6 +147,7 @@ export async function getGameServerJoinData(
 						"user-agent": ROBLOX_USER_AGENT,
 					},
 					body: JSON.stringify(request),
+					signal: AbortSignal.timeout(5_000),
 				},
 			);
 
@@ -256,6 +257,7 @@ export function getIpInfo(
 		headers: {
 			authorization: `Bearer ${accessToken}`,
 		},
+		signal: AbortSignal.timeout(5_000),
 	}).then((res) => res.json());
 }
 
@@ -306,6 +308,7 @@ export async function listPublicServers(
 					cookie,
 					"user-agent": ROBLOX_USER_AGENT,
 				},
+				signal: AbortSignal.timeout(5_000),
 			});
 
 			if (res.ok) {
@@ -375,6 +378,7 @@ export function listExperienceSorts(
 			"user-agent": ROBLOX_USER_AGENT,
 			cookie,
 		},
+		signal: AbortSignal.timeout(5_000),
 	}).then((res) => res.json());
 }
 

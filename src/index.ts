@@ -138,12 +138,13 @@ export default async function run({
 				requestCount++;
 				totalPlaying += server.playing;
 
+				const cookie = robloxCookies[usedRobloxCookieIndex];
 				getGameServerJoinData(
 					{
 						placeId: experience.rootPlaceId,
 						gameId: server.id,
 					},
-					robloxCookies[usedRobloxCookieIndex],
+					cookie,
 					privateAccessCookie,
 				).then(async (data) => {
 					receivedCount++;
@@ -249,6 +250,9 @@ export default async function run({
 							});
 						}
 					} else if (statusMessages) {
+						if (data.statusCode === 12) {
+							console.log(server.id, experience.rootPlaceId, cookie);
+						}
 						for (const item of statusMessages) {
 							if (
 								item.status === data.status &&
