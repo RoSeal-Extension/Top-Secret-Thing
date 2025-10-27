@@ -203,7 +203,7 @@ export async function getGameServerJoinData(
 				},
 			};
 		} catch (err) {
-			//console.error("getGameServerJoinData Error: ", err);
+			console.error("getGameServerJoinData Error: ", err);
 		}
 	}
 }
