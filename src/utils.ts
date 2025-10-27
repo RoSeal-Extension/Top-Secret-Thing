@@ -310,11 +310,11 @@ export async function listPublicServers(
 				console.log("listPublicServers: ", res.status);
 			}
 
-			if (res.status !== 429) {
-				continue;
-			}
-
 			requestCount++;
+
+			if (res.status !== 429) {
+				break;
+			}
 		} catch (err) {
 			console.error("listPublicServers Error:", err);
 		}
