@@ -47,6 +47,7 @@ type RunIntervalData = {
 	dataCenters: DataCenterData[];
 	rccChannelNames?: string[];
 	statusMessages?: StatusMessage[];
+	receivedOKCount?: number;
 };
 
 type RunProps = {
@@ -108,6 +109,7 @@ export default async function run({
 	let requestCount = 0;
 	let receivedCount = 0;
 	let totalPlaying = 0;
+	let receivedOKCount = 0;
 
 	setInterval(() => {
 		interval?.({
@@ -117,6 +119,7 @@ export default async function run({
 			totalPlaying,
 			rccChannelNames,
 			statusMessages,
+			receivedOKCount,
 		});
 	}, 10_000);
 
@@ -150,6 +153,10 @@ export default async function run({
 					receivedCount++;
 
 					if (!data) return;
+
+					if (data.data?.datacenter.id && data.data.connection.address) {
+						receivedOKCount++;
+					}
 
 					if (data?.data) {
 						if (rccChannelNames && !data.data.rcc.isPrivateChannel) {
