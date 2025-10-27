@@ -129,9 +129,10 @@ export async function getGameServerJoinData(
 	let attempts = 0;
 	while (true) {
 		attempts++;
-		if (attempts > 20) {
+		if (attempts > 10) {
 			console.log(request);
 		}
+
 		try {
 			const res = await fetch(
 				"https://gamejoin.roblox.com/v1/join-game-instance",
@@ -207,7 +208,9 @@ export async function getGameServerJoinData(
 					},
 				},
 			};
-		} catch {}
+		} catch (err) {
+			console.error("getGameServerJoinData Error: ", err);
+		}
 	}
 }
 
@@ -295,6 +298,7 @@ export async function listPublicServers(
 	while (true) {
 		if (requestCount >= 20) {
 			await Bun.sleep(requestCount * 500);
+			console.log("listPublicServers exceeded 20");
 		}
 		try {
 			const res = await fetch(url.toString(), {
@@ -307,8 +311,11 @@ export async function listPublicServers(
 			if (res.ok) {
 				return res.json();
 			}
+
 			requestCount++;
-		} catch {}
+		} catch (err) {
+			console.error("listPublicServers Error:", err);
+		}
 	}
 }
 

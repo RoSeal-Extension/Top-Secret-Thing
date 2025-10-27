@@ -76,26 +76,30 @@ export default async function run({
 	const sessionId = crypto.randomUUID();
 
 	while (true) {
-		const data = await listExperienceSorts(
-			{
-				sessionId,
-				sortsPageToken: cursor,
-			},
-			robloxCookies[usedRobloxCookieIndex],
-		);
+		try {
+			const data = await listExperienceSorts(
+				{
+					sessionId,
+					sortsPageToken: cursor,
+				},
+				robloxCookies[usedRobloxCookieIndex],
+			);
 
-		for (const sort of data.sorts) {
-			if (sort.contentType === "Games" && "games" in sort) {
-				for (const experience of sort.games) {
-					experiences.push(experience);
+			for (const sort of data.sorts) {
+				if (sort.contentType === "Games" && "games" in sort) {
+					for (const experience of sort.games) {
+						experiences.push(experience);
+					}
 				}
 			}
-		}
 
-		if (!data.nextSortsPageToken) {
-			break;
+			if (!data.nextSortsPageToken) {
+				break;
+			}
+			cursor = data.nextSortsPageToken;
+		} catch (err) {
+			console.error("run Error:", err);
 		}
-		cursor = data.nextSortsPageToken;
 	}
 	shuffleArray(experiences);
 
