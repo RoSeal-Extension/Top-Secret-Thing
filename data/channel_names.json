@@ -150,5 +150,6 @@
     "ztestsleepoptppcimpactcontrol",
     "znewextend-reservation-test-final-savecontrol2",
     "zbasepartcframeconstrefgetter",
-    "zbasepartcframeconstrefgettercontrol"
+    "zbasepartcframeconstrefgettercontrol",
+    "zvoicercccapabilitymonitor"
 ]
