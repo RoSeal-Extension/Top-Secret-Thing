@@ -271,10 +271,10 @@ export default async function run({
 			}
 			cursor = data.nextPageCursor;
 			usedRobloxCookieIndex++;
-		}
 
-		if (usedRobloxCookieIndex >= robloxCookies.length) {
-			usedRobloxCookieIndex = 0;
+			if (usedRobloxCookieIndex >= robloxCookies.length) {
+				usedRobloxCookieIndex = 0;
+			}
 		}
 	}
 }
