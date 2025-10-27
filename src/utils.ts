@@ -177,13 +177,6 @@ export async function getGameServerJoinData(
 				joinScript.UdmuxEndpoints?.[0] ?? joinScript.ServerConnections?.[0];
 			const internalConnection = joinScript.ServerConnections?.[0];
 
-			if (joinScript.NetStackConfig) {
-				console.log(
-					joinScript.NetStackConfig,
-					joinScript.NetStackPort,
-					joinScript.NetStackTokenValue,
-				);
-			}
 			return {
 				success: true,
 				statusCode: status,
@@ -210,7 +203,7 @@ export async function getGameServerJoinData(
 				},
 			};
 		} catch (err) {
-			console.error("getGameServerJoinData Error: ", err);
+			//console.error("getGameServerJoinData Error: ", err);
 		}
 	}
 }
@@ -314,12 +307,12 @@ export async function listPublicServers(
 			if (res.ok) {
 				return res.json();
 			} else {
-				console.log("listPublicServers: ", res.status);
+				//console.log("listPublicServers: ", res.status);
 			}
 
 			requestCount++;
 		} catch (err) {
-			console.error("listPublicServers Error:", err);
+			//console.error("listPublicServers Error:", err);
 		}
 	}
 }

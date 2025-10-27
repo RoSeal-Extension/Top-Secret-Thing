@@ -98,7 +98,7 @@ export default async function run({
 			}
 			cursor = data.nextSortsPageToken;
 		} catch (err) {
-			console.error("run Error:", err);
+			//console.error("run Error:", err);
 		}
 	}
 	shuffleArray(experiences);
@@ -250,9 +250,9 @@ export default async function run({
 							});
 						}
 					} else if (statusMessages) {
-						if (data.statusCode === 12) {
+						/*if (data.statusCode === 12) {
 							console.log(server.id, experience.rootPlaceId, data.status);
-						}
+						}*/
 						for (const item of statusMessages) {
 							if (
 								item.status === data.status &&
