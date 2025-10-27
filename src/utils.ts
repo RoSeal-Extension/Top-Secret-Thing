@@ -126,7 +126,12 @@ export async function getGameServerJoinData(
 ): Promise<MinimalServerJoinData | null> {
 	let isPrivateRetry = false;
 
+	let attempts = 0;
 	while (true) {
+		attempts++;
+		if (attempts > 20) {
+			console.log(request);
+		}
 		try {
 			const res = await fetch(
 				"https://gamejoin.roblox.com/v1/join-game-instance",
