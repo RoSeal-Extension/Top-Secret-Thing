@@ -307,12 +307,12 @@ export async function listPublicServers(
 			if (res.ok) {
 				return res.json();
 			} else {
-				//console.log("listPublicServers: ", res.status);
+				console.log("listPublicServers: ", res.status);
 			}
 
 			requestCount++;
 		} catch (err) {
-			//console.error("listPublicServers Error:", err);
+			console.error("listPublicServers Error:", err);
 		}
 	}
 }
