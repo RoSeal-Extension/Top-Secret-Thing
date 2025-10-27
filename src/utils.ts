@@ -298,8 +298,8 @@ export async function listPublicServers(
 	while (true) {
 		if (requestCount >= 20) {
 			await Bun.sleep(requestCount * 500);
-			console.log("listPublicServers exceeded 20");
 		}
+
 		try {
 			const res = await fetch(url.toString(), {
 				headers: {
@@ -310,6 +310,8 @@ export async function listPublicServers(
 
 			if (res.ok) {
 				return res.json();
+			} else {
+				console.log("listPublicServers: ", res.status);
 			}
 
 			requestCount++;
