@@ -156,5 +156,6 @@
     "ziectestingchannel",
     "ziectestingchannelcontrol",
     "zcompressioneverywherecontrol",
-    "zcompressioneverywhere"
+    "zcompressioneverywhere",
+    "zcapability-bits-to-networkcorecontrol"
 ]
