@@ -152,5 +152,6 @@
     "zbasepartcframeconstrefgetter",
     "zbasepartcframeconstrefgettercontrol",
     "zvoicercccapabilitymonitor",
-    "zusereflectableforbasictypes"
+    "zusereflectableforbasictypes",
+    "ziectestingchannel"
 ]
