@@ -281,7 +281,7 @@ type ListPublicServersResponse = {
 export async function listPublicServers(
 	{ placeId, ...search }: ListPublicServersRequest,
 	cookie: string,
-): Promise<ListPublicServersResponse> {
+): Promise<ListPublicServersResponse | undefined> {
 	const url = new URL(
 		`https://games.roblox.com/v1/games/${placeId}/servers/Public`,
 	);
