@@ -137,6 +137,8 @@ export default async function run({
 				robloxCookies[usedRobloxCookieIndex],
 			);
 
+			if (!data) break;
+
 			for (const server of data.data) {
 				requestCount++;
 				totalPlaying += server.playing;
