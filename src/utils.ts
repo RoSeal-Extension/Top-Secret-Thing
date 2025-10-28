@@ -152,7 +152,6 @@ export async function getGameServerJoinData(
 			);
 
 			if (!res.ok) {
-				console.log(res.status);
 				await Bun.sleep(10_000);
 				continue;
 			}
