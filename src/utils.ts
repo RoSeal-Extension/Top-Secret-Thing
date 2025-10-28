@@ -313,6 +313,7 @@ export async function listPublicServers(
 			requestCount++;
 
 			if (res.status !== 429) {
+				res.json().then(console.log);
 				break;
 			}
 		} catch (err) {
