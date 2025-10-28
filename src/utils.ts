@@ -314,7 +314,6 @@ export async function listPublicServers(
 
 			if (res.status !== 429) {
 				res.text().then((data) => console.log(data, cookie));
-				break;
 			}
 		} catch (err) {
 			console.error("listPublicServers Error:", err);

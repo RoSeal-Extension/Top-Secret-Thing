@@ -137,7 +137,7 @@ export default async function run({
 				robloxCookies[usedRobloxCookieIndex],
 			);
 
-			if (!data) break;
+			if (!data?.data) break;
 
 			for (const server of data.data) {
 				requestCount++;
