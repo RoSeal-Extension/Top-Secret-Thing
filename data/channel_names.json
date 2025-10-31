@@ -168,5 +168,7 @@
     "zdmremovalcontrol",
     "zrccsinglethreadtscontrol",
     "zrcclmcontrolchannel",
-    "zdmremoval"
+    "zdmremoval",
+    "zraknetdisablepollandselectcontrol",
+    "zraknetdisablepollandselect"
 ]
