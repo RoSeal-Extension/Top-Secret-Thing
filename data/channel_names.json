@@ -164,5 +164,9 @@
     "zrccsolverbatching",
     "zrccsolverbatchingcontrol",
     "zbasepartconstrefgettercontrolcustom",
-    "zzconvexdecomptesting1029control"
+    "zzconvexdecomptesting1029control",
+    "zdmremovalcontrol",
+    "zrccsinglethreadtscontrol",
+    "zrcclmcontrolchannel",
+    "zdmremoval"
 ]
