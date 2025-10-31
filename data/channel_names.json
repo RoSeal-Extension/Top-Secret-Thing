@@ -161,5 +161,6 @@
     "zcapability-bits-to-networkcore",
     "zzconvexdecomptesting1029",
     "ztelemetry-protos-dualwrite-697",
-    "zrccsolverbatching"
+    "zrccsolverbatching",
+    "zrccsolverbatchingcontrol"
 ]
