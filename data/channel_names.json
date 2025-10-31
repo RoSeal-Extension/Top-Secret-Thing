@@ -162,5 +162,6 @@
     "zzconvexdecomptesting1029",
     "ztelemetry-protos-dualwrite-697",
     "zrccsolverbatching",
-    "zrccsolverbatchingcontrol"
+    "zrccsolverbatchingcontrol",
+    "zbasepartconstrefgettercontrolcustom"
 ]
