@@ -170,5 +170,6 @@
     "zrcclmcontrolchannel",
     "zdmremoval",
     "zraknetdisablepollandselectcontrol",
-    "zraknetdisablepollandselect"
+    "zraknetdisablepollandselect",
+    "zrccsinglethreadts"
 ]
