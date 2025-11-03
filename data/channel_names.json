@@ -174,5 +174,6 @@
     "zrccsinglethreadts",
     "zrcclmcontrolchannelcontrolaa",
     "zformatdatamodel",
-    "zformatdatamodelcontrol"
+    "zformatdatamodelcontrol",
+    "zbasepartcframeconstrefgettercontrolnew"
 ]
