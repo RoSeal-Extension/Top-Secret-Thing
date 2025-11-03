@@ -176,5 +176,6 @@
     "zformatdatamodel",
     "zformatdatamodelcontrol",
     "zbasepartcframeconstrefgettercontrolnew",
-    "zflaggedmutexeslayer1and2"
+    "zflaggedmutexeslayer1and2",
+    "zflaggedmutexeslayer1and2control"
 ]
