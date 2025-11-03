@@ -177,5 +177,7 @@
     "zformatdatamodelcontrol",
     "zbasepartcframeconstrefgettercontrolnew",
     "zflaggedmutexeslayer1and2",
-    "zflaggedmutexeslayer1and2control"
+    "zflaggedmutexeslayer1and2control",
+    "zdecodehsrcontrol",
+    "zdecodehsr"
 ]
