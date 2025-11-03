@@ -173,5 +173,6 @@
     "zraknetdisablepollandselect",
     "zrccsinglethreadts",
     "zrcclmcontrolchannelcontrolaa",
-    "zformatdatamodel"
+    "zformatdatamodel",
+    "zformatdatamodelcontrol"
 ]
