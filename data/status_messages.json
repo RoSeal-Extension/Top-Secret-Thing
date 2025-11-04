@@ -78,5 +78,9 @@
     {
         "statusCode": 12,
         "status": "Unable to join Game 313"
+    },
+    {
+        "statusCode": 11,
+        "status": "Game is not approved."
     }
 ]
