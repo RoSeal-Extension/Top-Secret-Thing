@@ -185,5 +185,10 @@
     "zusefastfromaxistimesanglecontrol2",
     "zusefastfromaxistimesangle",
     "zskipnotifymovingcontrol",
-    "zskipnotifymoving"
+    "zskipnotifymoving",
+    "ztelemetry-v2-protos-variant",
+    "zrccipctelem",
+    "ztelemetry-v2-protos-control",
+    "zreportstalerccchannelscontrol",
+    "zreportstalerccchannels"
 ]
