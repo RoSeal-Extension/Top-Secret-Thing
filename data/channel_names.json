@@ -190,5 +190,6 @@
     "zrccipctelem",
     "ztelemetry-v2-protos-control",
     "zreportstalerccchannelscontrol",
-    "zreportstalerccchannels"
+    "zreportstalerccchannels",
+    "zperfdatatelemetrymigration"
 ]
