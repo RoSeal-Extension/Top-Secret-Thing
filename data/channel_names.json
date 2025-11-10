@@ -192,5 +192,6 @@
     "zreportstalerccchannelscontrol",
     "zreportstalerccchannels",
     "zperfdatatelemetrymigration",
-    "zperfdatatelemetrymigrationcontrol"
+    "zperfdatatelemetrymigrationcontrol",
+    "zanimatoroptimizationsforppc"
 ]
