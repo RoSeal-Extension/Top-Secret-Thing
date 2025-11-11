@@ -195,5 +195,6 @@
     "zperfdatatelemetrymigrationcontrol",
     "zanimatoroptimizationsforppc",
     "zanimatoroptimizationsforppccontrol2",
-    "ztestflagsvdc"
+    "ztestflagsvdc",
+    "zdeserializationextrascontrol"
 ]
