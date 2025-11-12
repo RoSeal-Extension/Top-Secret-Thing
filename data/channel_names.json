@@ -199,5 +199,6 @@
     "zdeserializationextrascontrol",
     "zdeserializationextras",
     "zfeaturegetcanmanageasync",
-    "zfeaturegetcanmanageasynccontrol"
+    "zfeaturegetcanmanageasynccontrol",
+    "zvideoplaybackmanager3control"
 ]
