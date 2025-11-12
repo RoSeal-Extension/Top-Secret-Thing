@@ -198,5 +198,6 @@
     "ztestflagsvdc",
     "zdeserializationextrascontrol",
     "zdeserializationextras",
-    "zfeaturegetcanmanageasync"
+    "zfeaturegetcanmanageasync",
+    "zfeaturegetcanmanageasynccontrol"
 ]
