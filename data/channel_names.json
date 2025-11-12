@@ -197,5 +197,6 @@
     "zanimatoroptimizationsforppccontrol2",
     "ztestflagsvdc",
     "zdeserializationextrascontrol",
-    "zdeserializationextras"
+    "zdeserializationextras",
+    "zfeaturegetcanmanageasync"
 ]
