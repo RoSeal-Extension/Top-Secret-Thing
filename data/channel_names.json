@@ -202,5 +202,6 @@
     "zfeaturegetcanmanageasynccontrol",
     "zvideoplaybackmanager3control",
     "zvideoplaybackmanager3",
-    "zstreamingobserverusesoctree"
+    "zstreamingobserverusesoctree",
+    "zstreamingobserverusesoctreecontrol"
 ]
