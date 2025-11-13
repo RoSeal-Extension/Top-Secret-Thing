@@ -206,5 +206,6 @@
     "zstreamingobserverusesoctreecontrol",
     "zperformancestaging",
     "zperformancestagingcontrol",
-    "zparttouchcontrol"
+    "zparttouchcontrol",
+    "zparttouch"
 ]
