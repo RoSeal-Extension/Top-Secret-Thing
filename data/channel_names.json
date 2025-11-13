@@ -209,5 +209,6 @@
     "zparttouchcontrol",
     "zparttouch",
     "zfmdvariablenumsubsetjoints",
-    "zfmdvariablenumsubsetjointscontrol"
+    "zfmdvariablenumsubsetjointscontrol",
+    "ztestoptimizemodelupdates"
 ]
