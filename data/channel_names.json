@@ -203,5 +203,6 @@
     "zvideoplaybackmanager3control",
     "zvideoplaybackmanager3",
     "zstreamingobserverusesoctree",
-    "zstreamingobserverusesoctreecontrol"
+    "zstreamingobserverusesoctreecontrol",
+    "zperformancestaging"
 ]
