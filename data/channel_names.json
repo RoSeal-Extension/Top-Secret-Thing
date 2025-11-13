@@ -208,5 +208,6 @@
     "zperformancestagingcontrol",
     "zparttouchcontrol",
     "zparttouch",
-    "zfmdvariablenumsubsetjoints"
+    "zfmdvariablenumsubsetjoints",
+    "zfmdvariablenumsubsetjointscontrol"
 ]
