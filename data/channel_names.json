@@ -210,5 +210,6 @@
     "zparttouch",
     "zfmdvariablenumsubsetjoints",
     "zfmdvariablenumsubsetjointscontrol",
-    "ztestoptimizemodelupdates"
+    "ztestoptimizemodelupdates",
+    "zflaggedmutexeslayer1and2flagsonly"
 ]
