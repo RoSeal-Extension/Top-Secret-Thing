@@ -651,5 +651,23 @@
                 "135.5011"
             ]
         }
+    },
+    {
+        "id": 22,
+        "dataCenterIds": [
+            26021
+        ],
+        "robloxIps": [
+            "128.116.22.33"
+        ],
+        "location": {
+            "city": "Atlanta",
+            "region": "Georgia",
+            "country": "US",
+            "latLong": [
+                "33.7490",
+                "-84.3880"
+            ]
+        }
     }
 ]
