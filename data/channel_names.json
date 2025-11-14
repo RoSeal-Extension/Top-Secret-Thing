@@ -216,5 +216,6 @@
     "ztestoptimizemodelupdatescontrol",
     "zfixoptimizeanimatedbonescontrol",
     "zfixoptimizeanimatedbones",
-    "zflaggedmutexeslayer3binary"
+    "zflaggedmutexeslayer3binary",
+    "zflaggedmutexeslayer3binarycontrol"
 ]
