@@ -218,5 +218,6 @@
     "zfixoptimizeanimatedbones",
     "zflaggedmutexeslayer3binary",
     "zflaggedmutexeslayer3binarycontrol",
-    "ztesting-dmct-reversecontrol"
+    "ztesting-dmct-reversecontrol",
+    "ztesting-dmct-reverse"
 ]
