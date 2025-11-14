@@ -215,5 +215,6 @@
     "zflaggedmutexeslayer1and2flagsonlycontrol",
     "ztestoptimizemodelupdatescontrol",
     "zfixoptimizeanimatedbonescontrol",
-    "zfixoptimizeanimatedbones"
+    "zfixoptimizeanimatedbones",
+    "zflaggedmutexeslayer3binary"
 ]
