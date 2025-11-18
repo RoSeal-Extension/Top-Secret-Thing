@@ -473,7 +473,7 @@ if (import.meta.main) {
 						),
 				]);
 
-				await Bun.$`git add --all -- ':!data/datacenters.json' && git commit --message ${Date.now()} && git push`
+				await Bun.$`git add --all && git commit --message ${Date.now()} && git push`
 					.quiet()
 					.catch(() => {});
 			},
