@@ -473,16 +473,7 @@ if (import.meta.main) {
 						),
 				]);
 
-				await Bun.$`
-  if git diff --quiet --exit-code -- data/grouped_datacenters.json; then
-    echo "No changes in data/grouped_datacenters.json — skipping commit";
-  else
-    echo "Changes detected in data/grouped_datacenters.json — committing";
-    git add -all &&
-    git commit -m ${Date.now()} &&
-    git push
-  fi
-`
+				await Bun.$`git diff --quiet --exit-code -- data/grouped_datacenters.json || (git add --all && git commit -m ${Date.now()} && git push)`
 					.quiet()
 					.catch(() => {});
 			},
