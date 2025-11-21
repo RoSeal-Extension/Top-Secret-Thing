@@ -223,5 +223,19 @@
     "ztestflagsvdc2",
     "zsetuniverserefactor",
     "zsetuniverserefactorcontrol",
-    "zbroadphasecrashtest"
+    "zbroadphasecrashtest",
+    "zphysicsppctest",
+    "zzprofdatatest",
+    "zuniversefilterscontrol",
+    "zprofdatacontrol",
+    "zuniversefilters",
+    "zphysicsppctestpleaseworkcontrol",
+    "zremoveclumpsfixoptimizeanimatedbones",
+    "zremoveclumps",
+    "zclumpscontrol",
+    "zphysicsppctestcontrol",
+    "zprofdatatest2",
+    "zprofdatacontrol2",
+    "zwsclientpollcontrol",
+    "zwsclientpoll"
 ]
