@@ -237,5 +237,8 @@
     "zprofdatatest2",
     "zprofdatacontrol2",
     "zwsclientpollcontrol",
-    "zwsclientpoll"
+    "zwsclientpoll",
+    "zlccompressusehsrvisibilitytest",
+    "zadonedgerollout",
+    "zadonedgerolloutcontrol"
 ]
