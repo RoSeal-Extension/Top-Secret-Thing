@@ -240,5 +240,13 @@
     "zwsclientpoll",
     "zlccompressusehsrvisibilitytest",
     "zadonedgerollout",
-    "zadonedgerolloutcontrol"
+    "zadonedgerolloutcontrol",
+    "zwsclientpoll2control",
+    "zwsclientpoll2",
+    "zsimfixbodyangularvelocitycontrol",
+    "zsimfixbodyangularvelocity",
+    "zraknetloopmscontrol",
+    "zraknetloopms10",
+    "zraknetloopms6",
+    "zraknetloopms4"
 ]
