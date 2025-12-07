@@ -248,5 +248,15 @@
     "zraknetloopmscontrol",
     "zraknetloopms10",
     "zraknetloopms6",
-    "zraknetloopms4"
+    "zraknetloopms4",
+    "zrbxtelemetrynrs",
+    "zrbxtelemetrynrsflagonlycontrol",
+    "zclumpsflagonlycontrol",
+    "zremoveclumpsfixoptimizeanimatedbonesflagsonly",
+    "zrcc-rbxl-binary-serializecontrol",
+    "zrcc-rbxl-binary-serialize",
+    "zphysicsppctestround2control",
+    "zphysicsppctestround2",
+    "zperformancebeta",
+    "zperformancebetacontrol"
 ]
