@@ -258,5 +258,20 @@
     "zphysicsppctestround2control",
     "zphysicsppctestround2",
     "zperformancebeta",
-    "zperformancebetacontrol"
+    "zperformancebetacontrol",
+    "zrccboltgennocfi",
+    "zaddbackcrashhandlingcode",
+    "zaddbackcrashhandlingcodecontrol",
+    "zaudioteamqualitytestingcontrol",
+    "zaudioteamqualitytesting",
+    "zrcc-rbxl-binary-serialize02control",
+    "zrcc-rbxl-binary-serialize02",
+    "zenrollmenttestbinary",
+    "zirad-public-channel",
+    "zwakeupbatchingcontrol",
+    "zwakeupbatchingvariant",
+    "zbundledchunksizestatcontrol",
+    "zbundledchunksizestat",
+    "zcompressionforrealcontrol",
+    "zcompressionforreal"
 ]
