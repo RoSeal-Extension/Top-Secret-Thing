@@ -273,5 +273,9 @@
     "zbundledchunksizestatcontrol",
     "zbundledchunksizestat",
     "zcompressionforrealcontrol",
-    "zcompressionforreal"
+    "zcompressionforreal",
+    "ztestremovingendianconversion",
+    "ztestremovingendianconversioncontrol",
+    "zphysics-scope-state-managed-jointcontrol",
+    "zphysics-scope-state-managed-joint"
 ]
