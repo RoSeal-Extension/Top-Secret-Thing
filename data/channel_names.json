@@ -277,5 +277,7 @@
     "ztestremovingendianconversion",
     "ztestremovingendianconversioncontrol",
     "zphysics-scope-state-managed-jointcontrol",
-    "zphysics-scope-state-managed-joint"
+    "zphysics-scope-state-managed-joint",
+    "zcertupdate20251104",
+    "zcertupdate20251104control"
 ]
