@@ -279,5 +279,11 @@
     "zphysics-scope-state-managed-jointcontrol",
     "zphysics-scope-state-managed-joint",
     "zcertupdate20251104",
-    "zcertupdate20251104control"
+    "zcertupdate20251104control",
+    "zflaggedmutexeslayer4binaryflagscontrol",
+    "zflaggedmutexeslayer4binaryflags",
+    "zactuatedjointsleep",
+    "zactuatedjointsleepcontrol",
+    "zrccipc",
+    "zrccipccontrol"
 ]
