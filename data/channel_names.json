@@ -285,5 +285,8 @@
     "zactuatedjointsleep",
     "zactuatedjointsleepcontrol",
     "zrccipc",
-    "zrccipccontrol"
+    "zrccipccontrol",
+    "zboostversionbump54",
+    "zboostversionbump54control",
+    "zeditablevalidatepermissioncheck"
 ]
