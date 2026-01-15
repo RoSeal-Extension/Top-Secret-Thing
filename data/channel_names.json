@@ -288,5 +288,12 @@
     "zrccipccontrol",
     "zboostversionbump54",
     "zboostversionbump54control",
-    "zeditablevalidatepermissioncheck"
+    "zeditablevalidatepermissioncheck",
+    "zfmodfixedsemaphores",
+    "zrccnetstackcontrol",
+    "zrccnetstacktest",
+    "zintegration3",
+    "zintegration4",
+    "zintegration5",
+    "zintegration6"
 ]
