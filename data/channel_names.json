@@ -315,5 +315,22 @@
     "zstream-job-refactor-part-2control",
     "zstream-job-refactor-part-2",
     "zskinninglifetime",
-    "zskinninglifetimecontrol"
+    "zskinninglifetimecontrol",
+    "zdebugpacketerrorendianconversion",
+    "zdebugpacketerrorendianconversioncontrol",
+    "zangularaccelerationsleeptestcontrol",
+    "zhttp3buildtest",
+    "zhttp3buildtestcontrol",
+    "zangularaccelerationsleeptest",
+    "zenumnewreflection",
+    "zenumnewreflectioncontrol",
+    "zflaggedmutexeslayer5binarycontrol",
+    "zflaggedmutexeslayer5binary",
+    "zinvestigate-fflagrefactoringressflowcontrol",
+    "zrccmultithreading",
+    "zrccmultithreadingcontrol",
+    "zzrccmultithreadingauto",
+    "zinvestigate-fflagrefactoringressflow",
+    "ztest-networkstream-remove-vec-unflagged-prcontrol",
+    "ztest-networkstream-remove-vec-unflagged-prep"
 ]
