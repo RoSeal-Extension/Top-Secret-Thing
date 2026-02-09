@@ -332,5 +332,9 @@
     "zzrccmultithreadingauto",
     "zinvestigate-fflagrefactoringressflow",
     "ztest-networkstream-remove-vec-unflagged-prcontrol",
-    "ztest-networkstream-remove-vec-unflagged-prep"
+    "ztest-networkstream-remove-vec-unflagged-prep",
+    "zhttp3buildtest2",
+    "zhttp3buildtest2ctrl",
+    "zfastraycastparams",
+    "zrccboltgenfulllto"
 ]

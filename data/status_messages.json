@@ -82,5 +82,9 @@
     {
         "statusCode": 11,
         "status": "Game is not approved."
+    },
+    {
+        "statusCode": 12,
+        "status": "The game is currently unavailable due to restrictions set by Roblox."
     }
 ]
