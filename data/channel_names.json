@@ -336,5 +336,11 @@
     "zhttp3buildtest2",
     "zhttp3buildtest2ctrl",
     "zfastraycastparams",
-    "zrccboltgenfulllto"
+    "zrccboltgenfulllto",
+    "ztweenservicecrashcontrol",
+    "ztweenservicecrash",
+    "zrccboltgenfulllto2",
+    "zcoreglobalsettingssingletonbinary",
+    "zcoreglobalsettingssingletonbinarycontrol",
+    "zrccboltusefulllto2"
 ]
