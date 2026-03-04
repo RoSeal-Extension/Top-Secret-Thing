@@ -366,5 +366,12 @@
     "zrccra4",
     "zrccra4control",
     "zisrphysicspropertiesonlyon",
-    "zns-refactor-testing-flag"
+    "zns-refactor-testing-flag",
+    "zrbxtelemetry-deprecate-blocking-flagged-control",
+    "zrbxtelemetry-deprecate-blocking-crash",
+    "zisrphysicspropertiesonlyoncontrol",
+    "zenginecontextspecstudio",
+    "zrbxtelemetry-deprecate-blocking-flagged",
+    "zrbxtelemetry-deprecate-blocking-control",
+    "zenginecontextspecstudiocontrol"
 ]
