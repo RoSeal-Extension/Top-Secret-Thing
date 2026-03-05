@@ -373,5 +373,14 @@
     "zenginecontextspecstudio",
     "zrbxtelemetry-deprecate-blocking-flagged",
     "zrbxtelemetry-deprecate-blocking-control",
-    "zenginecontextspecstudiocontrol"
+    "zenginecontextspecstudiocontrol",
+    "zcanaryasan2",
+    "zrccra3",
+    "ztelemetry-rename-brm-to-bm",
+    "zrccra3control",
+    "zdmrtest",
+    "zcanaryasancontrol2",
+    "zzisrphysicspropertiesonlyonmoreperfdatacontrol",
+    "zzisrphysicspropertiesonlyonmoreperfdata",
+    "zzrccpgoirgen2"
 ]
