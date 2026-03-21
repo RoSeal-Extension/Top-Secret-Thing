@@ -343,6 +343,14 @@ if (import.meta.main) {
 			throw err;
 		});
 
+	const rccPrivateChannelNames = await Bun.file("./data/private/channel_names.json")
+		.json()
+		.catch((err) => {
+			if (err.code === "ENOENT") return [];
+
+			throw err;
+		});
+
 	while (true) {
 		console.info("Running again...");
 		await run({
@@ -352,6 +360,8 @@ if (import.meta.main) {
 			dataCenters,
 			statusMessages,
 			rccChannelNames,
+			rccPrivateChannelNames,
+
 			interval: async ({
 				dataCenters,
 				requestCount,
@@ -471,6 +481,7 @@ if (import.meta.main) {
 							"data/channel_names.json",
 							JSON.stringify(rccChannelNames, null, 4),
 						),
+					rccPrivateChannelNames&& Bun.write("data/private/channel_names.json", JSON.stringify(rccPrivateChannelNames, null, 4))
 				]);
 
 				await Bun.$`git diff --quiet --exit-code -- data/grouped_datacenters.json || (git add --all && git commit -m ${Date.now()} && git push)`
