@@ -387,5 +387,7 @@
     "zrm3monitoriongenrollementv2",
     "zrm3monitoriongenrollementv2control",
     "zisrphysicspropertiesonlyonlowersendfrequencontrol",
-    "zisrphysicspropertiesonlyonlowersendfrequency"
+    "zisrphysicspropertiesonlyonlowersendfrequency",
+    "znextgenerationreplicationphysicssenderenabled",
+    "zserverdmr"
 ]
