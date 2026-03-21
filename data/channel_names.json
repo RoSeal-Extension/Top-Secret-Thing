@@ -389,5 +389,6 @@
     "zisrphysicspropertiesonlyonlowersendfrequencontrol",
     "zisrphysicspropertiesonlyonlowersendfrequency",
     "znextgenerationreplicationphysicssenderenabled",
-    "zserverdmr"
+    "zserverdmr",
+    "zloadrccflagsearlier"
 ]
