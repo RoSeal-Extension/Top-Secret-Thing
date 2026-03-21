@@ -56,6 +56,7 @@ type RunProps = {
 	ipInfoAccessToken: string;
 	dataCenters: DataCenterData[];
 	rccChannelNames?: string[];
+	rccPrivateChannelNames?: string[];
 	statusMessages?: StatusMessage[];
 	interval?: (data: RunIntervalData) => void;
 };
@@ -66,6 +67,7 @@ export default async function run({
 	ipInfoAccessToken,
 	dataCenters,
 	rccChannelNames,
+	rccPrivateChannelNames,
 	statusMessages,
 	interval,
 }: RunProps) {
@@ -161,14 +163,14 @@ export default async function run({
 					}
 
 					if (data?.data) {
-						if (rccChannelNames && !data.data.rcc.isPrivateChannel) {
+						if (rccChannelNames) {
 							const channelName = data.data?.rcc.channelName;
-							if (
-								channelName &&
-								channelName !== "LIVE" &&
-								!rccChannelNames.includes(channelName)
-							) {
-								rccChannelNames.push(channelName);
+							if (channelName && channelName !== "LIVE") {
+								if (data.data.rcc.isPrivateChannel) {
+									rccPrivateChannelNames?.push(channelName);
+								} else {
+									rccChannelNames.push(channelName);
+								}
 							}
 						}
 
@@ -343,7 +345,9 @@ if (import.meta.main) {
 			throw err;
 		});
 
-	const rccPrivateChannelNames = await Bun.file("./data/private/channel_names.json")
+	const rccPrivateChannelNames = await Bun.file(
+		"./data/private/channel_names.json",
+	)
 		.json()
 		.catch((err) => {
 			if (err.code === "ENOENT") return [];
@@ -361,7 +365,6 @@ if (import.meta.main) {
 			statusMessages,
 			rccChannelNames,
 			rccPrivateChannelNames,
-
 			interval: async ({
 				dataCenters,
 				requestCount,
@@ -481,7 +484,11 @@ if (import.meta.main) {
 							"data/channel_names.json",
 							JSON.stringify(rccChannelNames, null, 4),
 						),
-					rccPrivateChannelNames&& Bun.write("data/private/channel_names.json", JSON.stringify(rccPrivateChannelNames, null, 4))
+					rccPrivateChannelNames &&
+						Bun.write(
+							"data/private/channel_names.json",
+							JSON.stringify(rccPrivateChannelNames, null, 4),
+						),
 				]);
 
 				await Bun.$`git diff --quiet --exit-code -- data/grouped_datacenters.json || (git add --all && git commit -m ${Date.now()} && git push)`
