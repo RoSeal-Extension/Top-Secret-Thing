@@ -167,9 +167,11 @@ export default async function run({
 							const channelName = data.data?.rcc.channelName;
 							if (channelName && channelName !== "LIVE") {
 								if (data.data.rcc.isPrivateChannel) {
-									rccPrivateChannelNames?.push(channelName);
+									if (!rccPrivateChannelNames?.includes(channelName))
+										rccPrivateChannelNames?.push(channelName);
 								} else {
-									rccChannelNames.push(channelName);
+									if (!rccChannelNames.includes(channelName))
+										rccChannelNames.push(channelName);
 								}
 							}
 						}
