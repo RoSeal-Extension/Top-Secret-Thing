@@ -6207,12 +6207,12 @@
     {
         "dataCenterId": 489,
         "location": {
-            "city": "Leesburg",
+            "city": "Ashburn",
             "region": "Virginia",
             "country": "US",
             "latLong": [
-                "39.1157",
-                "-77.5636"
+                "39.0437",
+                "-77.4875"
             ]
         },
         "ips": [
